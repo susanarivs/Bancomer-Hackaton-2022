@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	sincronizar estos colores con los del tema
+-->
+<resources>
+  <color name="AccentColor">#FFa32f2f</color>
+  <color name="ComplementColor">#943e3e</color>
+  <color name="BaseTextColor">#FF666666</color>
+  <color name="ListViewSelectedItemBackgroundColor">#11000000</color>
+  <color name="SplashBackgroundColor">#FFFFFFFF</color>
+  <color name="NavigationBarTextColor">#FFFFFFFF</color>
+</resources>

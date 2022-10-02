@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="WhiteLabel.ContactItemTemplate"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:WhiteLabel">
+
+    <ContentView.Content>
+        <Grid
+            Padding="20,0"
+            BackgroundColor="{DynamicResource BasePageBackgroundColor}"
+            ColumnSpacing="14"
+            RowSpacing="0"
+            Style="{StaticResource ResponsiveLandscapeMarginStyle}"
+            VerticalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="44" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <local:CircleCachedImage
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Aspect="AspectFill"
+                HeightRequest="44"
+                Source="{Binding ImageFace}"
+                Style="{StaticResource Avatar}"
+                VerticalOptions="Center"
+                WidthRequest="44" />
+
+            <!--  NOMBRE  -->
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                Style="{StaticResource LabelBoldStyle}"
+                Text="{Binding FullName}"
+                VerticalOptions="End" />
+
+            <StackLayout
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Orientation="Horizontal">
+                
+                <!--  ICONO DE DOCUMENTO  -->
+                <Label
+                    FontFamily="{StaticResource IconsFontFamily}"
+                    FontSize="13"
+                    Text="{x:Static local:GrialIconsFont.Database}"
+                    TextColor="{DynamicResource AccentColor}"
+                    VerticalOptions="Center" />
+
+                <!--  TIPO DE DOCUMENTO  -->
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    FontSize="13"
+                    Text="{Binding DocumentType}"
+                    TextColor="{DynamicResource AccentColor}"
+                    VerticalOptions="Center" />
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D932186-4A2A-4EA2-8E1B-AA39DF3A7E61}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WhiteLabel.Core</RootNamespace>
+    <AssemblyName>WhiteLabel.Core.Droid</AssemblyName>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>portable</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>portable</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>portable</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>portable</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_NotBlink|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_NotBlink\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>portable</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_NotBlink|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug_NotBlink\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>portable</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_NotBlink|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug_NotBlink\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>portable</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WhiteLabel\Core\ActivityIndicatorRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\AndroidVideoView.cs" />
+    <Compile Include="WhiteLabel\Core\BackgroundGradientEffect.cs" />
+    <Compile Include="WhiteLabel\Core\BaseEffect.cs" />
+    <Compile Include="WhiteLabel\Core\BorderRendererHelper.cs" />
+    <Compile Include="WhiteLabel\Core\CornerRadiusEffect.cs" />
+    <Compile Include="WhiteLabel\Core\CultureHelper.cs" />
+    <Compile Include="WhiteLabel\Core\CultureService.cs" />
+    <Compile Include="WhiteLabel\Core\CultureServiceLocator.cs" />
+    <Compile Include="WhiteLabel\Core\DatePickerRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\DeviceOrientationImpl.cs" />
+    <Compile Include="WhiteLabel\Core\DeviceOrientationLocator.cs" />
+    <Compile Include="WhiteLabel\Core\Droid\Resource.cs" />
+    <Compile Include="WhiteLabel\Core\EditorRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\EditorRendererHelper.cs" />
+    <Compile Include="WhiteLabel\Core\EntryCellRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\EntryRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\EntryRendererHelper.cs" />
+    <Compile Include="WhiteLabel\Core\FormsVideoPlayerRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\FormsVideoView.cs" />
+    <Compile Include="WhiteLabel\Core\GradientFactory.cs" />
+    <Compile Include="WhiteLabel\Core\GrialKit.cs" />
+    <Compile Include="WhiteLabel\Core\GrialNavigationBarRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\GrialNavigationPageRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\ImageCellRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\LayoutDirectionService.cs" />
+    <Compile Include="WhiteLabel\Core\LayoutDirectionServiceLocator.cs" />
+    <Compile Include="WhiteLabel\Core\LongPressEffect.cs" />
+    <Compile Include="WhiteLabel\Core\MasterDetailPageRtlAwareRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\NavigationPageRtlAwareRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\PickerRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\PickerRendererHelper.cs" />
+    <Compile Include="WhiteLabel\Core\ProgressBarRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\SearchBarRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\ShadowEffect.cs" />
+    <Compile Include="WhiteLabel\Core\SliderRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\SwitchCellRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\SwitchCellView.cs" />
+    <Compile Include="WhiteLabel\Core\SwitchRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\TabbedPageRtlAwareRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\TableViewRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\TextCellRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\TimePickerRenderer.cs" />
+    <Compile Include="WhiteLabel\Core\Utils.cs" />
+    <Compile Include="WhiteLabel\Core\ViewCellRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Forms">
+      <Version>4.6.0.772</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\WhiteLabel.Core.csproj">
+      <Project>{5D689AE9-CEA5-491F-B196-AE4B6C9BA5C1}</Project>
+      <Name>WhiteLabel.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
