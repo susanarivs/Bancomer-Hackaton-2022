@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="WhiteLabel.ChatMainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:WhiteLabel.Converters"
+    xmlns:grial="clr-namespace:WhiteLabel.Core;assembly=WhiteLabel.Core"
+    xmlns:local="clr-namespace:WhiteLabel"
+    x:DataType="local:ChatMainViewModel"
+    xmlns:models="clr-namespace:WhiteLabel.Models"
+    Title="Registro v1.0"
+    grial:Effects.ApplyIOSSafeAreaAsPadding="Bottom"
+    BackgroundColor="White">
+
+    <ContentPage.Resources>
+        <ResourceDictionary Source="/Styles/TabControl/SegmentedTabResources.xaml" />
+
+        <converters:InverseBooleanConverter x:Key="ivbConverter" />
+
+        <!--  BOTONES CIRCULARES  -->
+        <Style
+            x:Key="FloatingActionButtonStyle"
+            BasedOn="{StaticResource CircleActionButtonFlatStyle}"
+            TargetType="Button">
+            <Setter Property="grial:Effects.Shadow" Value="True" />
+            <Setter Property="grial:Effects.ShadowSize" Value="2" />
+            <Setter Property="grial:Effects.ShadowIOSColor" Value="#66000000" />
+            <Setter Property="HorizontalOptions" Value="End" />
+            <Setter Property="VerticalOptions" Value="End" />
+            <Setter Property="FontFamily" Value="{StaticResource IconsFontFamily}" />
+            <Setter Property="Margin" Value="20" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <Grid>
+            <ListView
+                x:Name="contacts"
+                BackgroundColor="{DynamicResource BasePageColor}"
+                CachingStrategy="RecycleElement"
+                HasUnevenRows="false"
+                IsVisible="{Binding Path=IsEmpty, Converter={StaticResource ivbConverter}}"
+                ItemTapped="OnContactTapped"
+                ItemsSource="{Binding Contacts}"
+                RowHeight="76">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:PersonDataView">
+                        <ViewCell>
+                            <local:ContactItemTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!--  VACIO  -->
+            <Grid x:Name="welcome" IsVisible="{Binding IsEmpty}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid
+                    Grid.Row="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60*" />
+                        <RowDefinition Height="40*" />
+                    </Grid.RowDefinitions>
+
+                    <!--  ICONO FONDO  -->
+                    <Label
+                        Grid.Row="0"
+                        FontSize="250"
+                        HorizontalOptions="Center"
+                        Opacity="0.1"
+                        Style="{StaticResource FontIcon}"
+                        Text="{x:Static local:GrialIconsFont.ShapeCircle}"
+                        TextColor="{DynamicResource ComplementColor}"
+                        VerticalOptions="Center" />
+
+                    <!--  ICONO FONDO  -->
+                    <Label
+                        Grid.Row="0"
+                        FontSize="180"
+                        HorizontalOptions="Center"
+                        Opacity="0.1"
+                        Style="{StaticResource FontIcon}"
+                        Text="{x:Static local:GrialIconsFont.ShapeCircle}"
+                        TextColor="{DynamicResource ComplementColor}"
+                        VerticalOptions="Center" />
+
+                    <!--  ICONO  -->
+                    <Label
+                        Grid.Row="0"
+                        FontSize="100"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource FontIcon}"
+                        Text="{x:Static local:GrialIconsFont.Check}"
+                        TextColor="{DynamicResource ComplementColor}"
+                        VerticalOptions="Center" />
+
+                    <!--  TEXTO  -->
+                    <StackLayout
+                        Grid.Row="1"
+                        Padding="60,0"
+                        Spacing="2"
+                        VerticalOptions="Center">
+
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="24"
+                            HorizontalTextAlignment="Center"
+                            Text="Haz clic en algún botón"
+                            TextColor="{DynamicResource BaseTextColor}" />
+
+                        <Label
+                            FontSize="16"
+                            HorizontalTextAlignment="Center"
+                            Opacity="0.8"
+                            Text="para registrar o cargar documentos"
+                            TextColor="{DynamicResource BaseTextColor}" />
+                    </StackLayout>
+                </Grid>
+            </Grid>
+
+            <!--  AGREGAR NUEVO  -->
+            <Button
+                Clicked="OnAddContactClicked"
+                Style="{StaticResource FloatingActionButtonStyle}"
+                Text="{x:Static local:GrialIconsFont.Plus}" />
+            
+            <Button Margin="0,0,20,80" 
+                    Clicked="OnTakeGalleryClicked" 
+                    Style="{StaticResource FloatingActionButtonStyle}" 
+                    Text="{x:Static local:GrialIconsFont.Folder}" />
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

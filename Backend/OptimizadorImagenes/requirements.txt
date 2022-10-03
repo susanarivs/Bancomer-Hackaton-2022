@@ -1,0 +1,10 @@
+Flask==1.1.2
+Pillow==7.2.0
+matplotlib
+numpy==1.18.5
+ocrd-fork-pylsd==0.0.3
+namegenerator
+requests
+opencv-python==4.5.5.64
+scipy
+gunicorn

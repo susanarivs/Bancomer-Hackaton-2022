@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="WhiteLabel.ContactDetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:local="clr-namespace:WhiteLabel"
+    xmlns:models="clr-namespace:WhiteLabel.Models"
+    x:DataType="local:ContactDetailViewModel" Title="Información">
+    <ContentPage.Content>
+        <Grid Padding="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!--  ENCABEZADO  -->
+            <Grid
+                Grid.Row="0"
+                Padding="0"
+                ColumnSpacing="0"
+                HeightRequest="100"
+                RowSpacing="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <!--  FONDO DIFUMINADO  -->
+                <ffimageloading:CachedImage
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.ColumnSpan="3"
+                    Aspect="AspectFill"
+                    DownsampleHeight="10"
+                    FadeAnimationEnabled="false"
+                    ScaleX="1.2"
+                    Source="{Binding Image}">
+                    <ffimageloading:CachedImage.Transformations>
+                        <fftransformations:BlurredTransformation Radius="2" />
+                    </ffimageloading:CachedImage.Transformations>
+                </ffimageloading:CachedImage>
+
+                <BoxView
+                    Grid.RowSpan="2"
+                    Grid.ColumnSpan="3"
+                    BackgroundColor="Black"
+                    Opacity="0.4" />
+
+                <!--  AVATAR  -->
+                <local:CircleCachedImage
+                    Grid.RowSpan="2"
+                    Margin="20,15,10,15"
+                    HorizontalOptions="Start"
+                    Source="{Binding Image}"
+                    VerticalOptions="Center" />
+
+                <!--  NOMBRE  -->
+                <Label
+                    Grid.Column="1"
+                    FontSize="18"
+                    LineBreakMode="TailTruncation"
+                    Style="{DynamicResource LabelBoldStyle}"
+                    Text="{Binding Contact.FullName}"
+                    TextColor="{DynamicResource OverImageTextColor}"
+                    VerticalOptions="End" />
+
+                <!--  ICONO  -->
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Margin="0,4,0,0"
+                    FontFamily="{StaticResource IconsFontFamily}"
+                    Text="{x:Static local:GrialIconsFont.Database}"
+                    TextColor="{DynamicResource OverImageTextColor}" />
+
+                <!--  TIPO  -->
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Margin="26,2,0,0"
+                    FontSize="14"
+                    LineBreakMode="TailTruncation"
+                    Text="{Binding Contact.DocumentType}"
+                    TextColor="{DynamicResource OverImageTextColor}" />
+
+                <!--  BOTON BORRAR  -->
+                <Button
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.Column="2"
+                    Margin="10,0,20,0"
+                    BindingContext="{Binding Contact}"
+                    Clicked="OnDelete"
+                    CornerRadius="17"
+                    FontFamily="{StaticResource IconsFontFamily}"
+                    FontSize="12"
+                    HeightRequest="34"
+                    HorizontalOptions="Start"
+                    Style="{DynamicResource OutlineInverseButtonStyle}"
+                    Text="X"
+                    VerticalOptions="Center"
+                    WidthRequest="60" />
+            </Grid>
+
+            <!--  LISTA  -->
+            <ListView
+                Grid.Row="1"
+                BackgroundColor="{DynamicResource BasePageColor}"
+                CachingStrategy="RecycleElement"
+                HasUnevenRows="true"
+                ItemsSource="{Binding Values}"
+                SelectionMode="None"
+                Style="{StaticResource ResponsiveLandscapeMarginStyle}">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:ValueData">
+                        <ViewCell>
+                            <local:ContactDetailItemTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
