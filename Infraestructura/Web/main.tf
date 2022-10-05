@@ -9,16 +9,14 @@ terraform {
       version = "3.1.0"
     }
   }
-}
 
-/*terraform {
   backend "azurerm" {
     resource_group_name  = "ccps-rg"
     storage_account_name = "ccpsazurest01"
     container_name       = "ccpsterraformstatefile"
     key                  = "ccpsterraform.tfstate"
   }
-}*/
+}
 
 # Configurar proveedor de Azure
 provider "azurerm" {
@@ -60,4 +58,13 @@ resource "azurerm_windows_web_app" "bbvatf-back" {
   }
 
   https_only = true
+}
+
+resource "azurerm_cognitive_account" "bbvatf-form" {
+  name                = "${var.prefix}-frm-ine"
+  location            = azurerm_resource_group.bbvatf-rg.location
+  resource_group_name = azurerm_resource_group.bbvatf-rg.name
+  kind                = "FormRecognizer"
+
+  sku_name = "S0"
 }
