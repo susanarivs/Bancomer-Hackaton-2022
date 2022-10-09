@@ -2,7 +2,7 @@ name: Construir y Desplegar en Azure
 
 env:
   AZURE_WEBAPP_NAME: 'bbva-back'
-  AZURE_WEBAPP_PACKAGE_PATH: '/Backend/ValidadorDatos'
+  AZURE_WEBAPP_PACKAGE_PATH: 'Backend/ValidadorDatos'
   DOTNET_VERSION: '6'
 
 on:
@@ -14,9 +14,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./Backend/ValidadorDatos
+    #defaults:
+    #  run:
+    #    working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
     steps:
       - uses: actions/checkout@v3
@@ -25,9 +25,13 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
+      
+      - name: Restaurar paquetes
+        run: dotnet restore ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Compilar
         run: dotnet build --configuration Release
+        working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Publicar artefacto
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/validador
