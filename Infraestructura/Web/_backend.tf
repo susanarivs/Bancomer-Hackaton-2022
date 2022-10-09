@@ -20,10 +20,17 @@ resource "azurerm_windows_web_app" "bbvatf-back" {
       current_stack  = "dotnetcore"
       dotnet_version = "v6.0"
     }
+    use_32_bit_worker = false
   }
 
   app_settings = {
-    "ASPNETCORE_ENVIRONMENT" = "Development"
+    "ASPNETCORE_ENVIRONMENT"    = "Development"
+    "AppConfigConnectionString" = azurerm_app_configuration.backend-config.primary_read_key.connection_string
+    "WEBSITE_RUN_FROM_PACKAGE"  = "1"
+  }
+
+  identity {
+    type = "SystemAssigned"
   }
 
   https_only = true
