@@ -103,7 +103,7 @@ namespace AltergoAPI.Nss.Core.Controllers
             var mail = KeyGenerator.GetUniqueKey(10);
             var tempMail = $"{mail}@gmail.com";
 
-            var restClient = new RestClient($"{_configuration["Imss:apiurl"]}/{curp}?tipoOperacion=consultarNssPorCurp&correo={tempMail}")
+            var restClient = new RestClient($"{_configuration["imssapiurl"]}/{curp}?tipoOperacion=consultarNssPorCurp&correo={tempMail}")
             {
                 Timeout = -1
             };
@@ -143,7 +143,7 @@ namespace AltergoAPI.Nss.Core.Controllers
                 }
                 else
                 {
-                    restClient = new RestClient($"{_configuration["Imss:apiurlum"]}/{nss}?tipoOperacion=consultarUMFAsignada")
+                    restClient = new RestClient($"{_configuration["imssapiurlum"]}/{nss}?tipoOperacion=consultarUMFAsignada")
                     { Timeout = -1 };
                     response = await restClient.ExecuteAsync(request);
                     if (response.StatusCode == HttpStatusCode.OK)
@@ -158,7 +158,7 @@ namespace AltergoAPI.Nss.Core.Controllers
                         }
                     }
 
-                    restClient = new RestClient($"{_configuration["Imss:apiurlvg"]}/{nss}?tipoOperacion=consultarVigencia&curp={curp}")
+                    restClient = new RestClient($"{_configuration["imssapiurlvg"]}/{nss}?tipoOperacion=consultarVigencia&curp={curp}")
                     { Timeout = -1 };
                     response = await restClient.ExecuteAsync(request);
                     if (response.StatusCode == HttpStatusCode.OK)
