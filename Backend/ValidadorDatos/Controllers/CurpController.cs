@@ -59,7 +59,7 @@ namespace AltergoAPI.Nss.Core.Controllers
                     return BadRequest(err);
                 }
 
-                var client = new RestClient($"{_configuration["Renapo:url"]}/consultaCurp")
+                var client = new RestClient($"{_configuration["renapourl"]}/consultaCurp")
                 {
                     Timeout = -1,
                     UserAgent = agente
@@ -135,7 +135,7 @@ namespace AltergoAPI.Nss.Core.Controllers
         {
             try
             {
-                var client = new RestClient($"{_configuration["Renapo:url"]}/consultaCurpPorDetalle")
+                var client = new RestClient($"{_configuration["renapourl"]}/consultaCurpPorDetalle")
                 {
                     Timeout = -1,
                     UserAgent = agente

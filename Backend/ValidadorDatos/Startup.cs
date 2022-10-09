@@ -25,7 +25,7 @@ namespace AltergoAPI.Nss.Core
         {
             services.AddMemoryCache();
             services.AddScoped<ICacheProvider, CacheProvider>();
-            services.AddSingleton(Configuration);
+            services.AddSingleton(Configuration);   //se inyecta la configuración
 
             services.AddControllers(x =>
                 x.Conventions.Add(new SwaggerApplicationConvention()))

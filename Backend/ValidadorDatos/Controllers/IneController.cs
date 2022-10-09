@@ -86,7 +86,7 @@ namespace AltergoAPI.Nss.Core.Controllers
                 return BadRequest(err);
             }
 
-            var solver = new TwoCaptcha.TwoCaptcha(_configuration["Ine:recaptchatoken"]);
+            var solver = new TwoCaptcha.TwoCaptcha(_configuration["recaptchatoken"]);
             var bal = solver.Balance().Result;
             if (bal <= 0)
             {
@@ -95,12 +95,12 @@ namespace AltergoAPI.Nss.Core.Controllers
             }
 
             var captcha = new ReCaptcha();
-            captcha.SetSiteKey(_configuration["Ine:sitetoken"]);
-            captcha.SetUrl(_configuration["Ine:url"]);
+            captcha.SetSiteKey(_configuration["sitetoken"]);
+            captcha.SetUrl(_configuration["ineurl"]);
 
             solver.Solve(captcha).Wait();
             var gresponse = captcha.Code;
-            var restClient = new RestClient(_configuration["Ine:urlresultado"])
+            var restClient = new RestClient(_configuration["ineurlresultado"])
             {
                 Timeout = -1
             };
@@ -208,7 +208,7 @@ namespace AltergoAPI.Nss.Core.Controllers
                 return BadRequest(err);
             }
 
-            var solver = new TwoCaptcha.TwoCaptcha(_configuration["Ine:recaptchatoken"]);
+            var solver = new TwoCaptcha.TwoCaptcha(_configuration["recaptchatoken"]);
             var bal = solver.Balance().Result;
             if (bal <= 0)
             {
@@ -217,12 +217,12 @@ namespace AltergoAPI.Nss.Core.Controllers
             }
 
             var captcha = new ReCaptcha();
-            captcha.SetSiteKey(_configuration["Ine:sitetoken"]);
-            captcha.SetUrl(_configuration["Ine:url"]);
+            captcha.SetSiteKey(_configuration["sitetoken"]);
+            captcha.SetUrl(_configuration["ineurl"]);
 
             solver.Solve(captcha).Wait();
             var gresponse = captcha.Code;
-            var restClient = new RestClient(_configuration["Ine:urlresultado"])
+            var restClient = new RestClient(_configuration["ineurlresultado"])
             {
                 Timeout = -1
             };
