@@ -27,10 +27,10 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
       
       - name: Restaurar paquetes
-        run: dotnet restore ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        run: dotnet restore ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/ValidadorDatos.sln
 
       - name: Compilar
-        run: dotnet build --configuration Release
+        run: dotnet build ValidadorDatos.sln --configuration Release
         working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Publicar artefacto
