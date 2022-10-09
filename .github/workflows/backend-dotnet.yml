@@ -14,6 +14,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Backend/ValidadorDatos
 
     steps:
       - uses: actions/checkout@v3
@@ -23,16 +26,7 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
-      - name: Crear cache de dependencias
-        uses: actions/cache@v3
-        with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-nuget-
-
       - name: Compilar
-        working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
         run: dotnet build --configuration Release
 
       - name: Publicar artefacto
