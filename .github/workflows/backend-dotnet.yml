@@ -14,9 +14,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    #defaults:
-    #  run:
-    #    working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+    defaults:
+      run:
+        working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
     steps:
       - uses: actions/checkout@v3
@@ -27,14 +27,13 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
       
       - name: Restaurar paquetes
-        run: dotnet restore ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/ValidadorDatos.sln
+        run: dotnet restore ValidadorDatos.sln
 
       - name: Compilar
         run: dotnet build ValidadorDatos.sln --configuration Release
-        working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Publicar artefacto
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/validador
+        run: dotnet publish ValidadorDatos.sln -c Release -o ${{env.DOTNET_ROOT}}/validador
 
       - name: Subir artefacto para desplegar
         uses: actions/upload-artifact@v3
