@@ -31,7 +31,7 @@ resource "azurerm_windows_web_app" "bbvatf-back" {
   connection_string {
     name  = "AppConfig"
     type  = "Custom"
-    value = azurerm_app_configuration.backend-config.primary_read_key.connection_string
+    value = azurerm_app_configuration.backend-config.primary_read_key[0].connection_string
   }
 
   identity {
