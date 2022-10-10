@@ -24,9 +24,14 @@ resource "azurerm_windows_web_app" "bbvatf-back" {
   }
 
   app_settings = {
-    "ASPNETCORE_ENVIRONMENT"    = "Development"
-    "AppConfigConnectionString" = azurerm_app_configuration.backend-config.primary_read_key.connection_string
-    "WEBSITE_RUN_FROM_PACKAGE"  = "1"
+    "ASPNETCORE_ENVIRONMENT"   = "Development"
+    "WEBSITE_RUN_FROM_PACKAGE" = "1"
+  }
+
+  connection_string {
+    name  = "AppConfig"
+    type  = "Custom"
+    value = azurerm_app_configuration.backend-config.primary_read_key[0].connection_string
   }
 
   identity {
