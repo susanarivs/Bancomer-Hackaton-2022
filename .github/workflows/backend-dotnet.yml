@@ -3,6 +3,7 @@ name: Backend Validador de Datos
 env:
   AZURE_WEBAPP_NAME: 'bbva-back'
   AZURE_WEBAPP_PACKAGE_PATH: 'Backend/ValidadorDatos'
+  TERRAFORM_PACKAGE_PATH: 'Infraestructura/Web'
   DOTNET_VERSION: '6'
 
 on:
@@ -10,7 +11,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  construir:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -38,10 +39,37 @@ jobs:
         with:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/validador
-
-  deploy:
+  
+  terraformar:
     runs-on: ubuntu-latest
-    needs: build
+    needs: construir
+    defaults:
+      run:
+        working-directory: ${{ env.TERRAFORM_PACKAGE_PATH }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: hashicorp/setup-terraform@v2
+
+      - name: 'Sesion en Azure'
+        uses: azure/login@v1
+        with:
+          creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+      
+      - name: 'Comandos Az'
+        run: |
+          az account show
+          az group list
+          pwd
+      
+      - name: Terraform fmt
+        id: fmt
+        run: terraform fmt -check
+        continue-on-error: false
+
+  desplegar:
+    runs-on: ubuntu-latest
+    needs: [construir, terraformar]
     environment:
       name: 'production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
