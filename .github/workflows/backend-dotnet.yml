@@ -1,4 +1,4 @@
-name: Construir y Desplegar en Azure
+name: Backend Validador de Datos
 
 env:
   AZURE_WEBAPP_NAME: 'bbva-back'
@@ -7,8 +7,6 @@ env:
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
     branches: [ "master" ]
 
 jobs:

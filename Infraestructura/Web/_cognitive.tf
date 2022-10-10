@@ -13,6 +13,7 @@ resource "azurerm_storage_account" "bbvatf-form-store" {
   resource_group_name      = azurerm_resource_group.bbvatf-rg.name
   account_tier             = "Standard"
   account_replication_type = "LRS"
+  min_tls_version          = "TLS1_2"
 }
 
 resource "azurerm_storage_container" "bbvatf-form-store-co" {
