@@ -26,54 +26,54 @@ resource "azurerm_app_configuration_key" "ine-recaptchatoken" {
   configuration_store_id = azurerm_app_configuration.backend-config.id
   key                    = "recaptchatoken"
   label                  = "Secrets"
-  value                  = "tmp"
+  value                  = sensitive(data.doppler_secrets.this.map.INE_RECAPTCHATOKEN)
 }
 
 resource "azurerm_app_configuration_key" "ine-sitetoken" {
   configuration_store_id = azurerm_app_configuration.backend-config.id
   key                    = "sitetoken"
   label                  = "Secrets"
-  value                  = "tmp"
+  value                  = sensitive(data.doppler_secrets.this.map.INE_SITETOKEN)
 }
 
 resource "azurerm_app_configuration_key" "ine-url" {
   configuration_store_id = azurerm_app_configuration.backend-config.id
   key                    = "ineurl"
   label                  = "Secrets"
-  value                  = "tmp"
+  value                  = sensitive(data.doppler_secrets.this.map.INE_URI)
 }
 
 resource "azurerm_app_configuration_key" "ine-url-resultado" {
   configuration_store_id = azurerm_app_configuration.backend-config.id
   key                    = "ineurlresultado"
   label                  = "Secrets"
-  value                  = "tmp"
+  value                  = sensitive(data.doppler_secrets.this.map.INE_RES_URI)
 }
 
 resource "azurerm_app_configuration_key" "renapo-url" {
   configuration_store_id = azurerm_app_configuration.backend-config.id
   key                    = "renapourl"
   label                  = "Secrets"
-  value                  = "tmp"
+  value                  = sensitive(data.doppler_secrets.this.map.RENAPO_URI)
 }
 
 resource "azurerm_app_configuration_key" "imss-apiurl" {
   configuration_store_id = azurerm_app_configuration.backend-config.id
   key                    = "imssapiurl"
   label                  = "Secrets"
-  value                  = "tmp"
+  value                  = sensitive(data.doppler_secrets.this.map.IMSS_URI)
 }
 
 resource "azurerm_app_configuration_key" "imss-apiurlum" {
   configuration_store_id = azurerm_app_configuration.backend-config.id
   key                    = "imssapiurlum"
   label                  = "Secrets"
-  value                  = "tmp"
+  value                  = sensitive(data.doppler_secrets.this.map.IMSS_UM_URI)
 }
 
 resource "azurerm_app_configuration_key" "imss-apiurlvg" {
   configuration_store_id = azurerm_app_configuration.backend-config.id
   key                    = "imssapiurlvg"
   label                  = "Secrets"
-  value                  = "tmp"
+  value                  = sensitive(data.doppler_secrets.this.map.IMSS_VG_URI)
 }

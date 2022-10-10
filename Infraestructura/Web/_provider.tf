@@ -8,9 +8,13 @@ terraform {
     random = {
       version = "3.1.0"
     }
+    doppler = {
+      source  = "DopplerHQ/doppler"
+      version = "1.1.2"
+    }
   }
 
-# store para el tfstate en la nube
+  # store para el tfstate en la nube
   backend "azurerm" {
     resource_group_name  = "ccps-rg"
     storage_account_name = "ccpsazurest01"
