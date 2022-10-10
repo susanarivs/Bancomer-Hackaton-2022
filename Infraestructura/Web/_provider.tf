@@ -30,4 +30,9 @@ provider "azurerm" {
       purge_soft_delete_on_destroy = true
     }
   }
+  
+  subscription_id = nonsensitive(data.doppler_secrets.this.map.SUBSCRIPTION_ID)
+  client_id       = nonsensitive(data.doppler_secrets.this.map.CLIENT_ID)
+  client_secret   = sensitive(data.doppler_secrets.this.map.CLIENT_SECRET)
+  tenant_id       = nonsensitive(data.doppler_secrets.this.map.TENANT_ID)
 }
