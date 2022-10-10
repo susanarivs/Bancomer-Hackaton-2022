@@ -21,4 +21,4 @@ enabled = true
 
 [[transformers]]
 name = "dotnet-format"
-enabled = true
+enabled = false
