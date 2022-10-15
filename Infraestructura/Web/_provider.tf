@@ -3,7 +3,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">=2.92.0"
+      version = ">=3.0.0"
     }
     random = {
       version = "3.1.0"
@@ -14,7 +14,7 @@ terraform {
     }
   }
 
-  # store para el tfstate en la nube
+  # store para el tfstate en azure
   backend "azurerm" {
     resource_group_name  = "ccps-rg"
     storage_account_name = "ccpsazurest01"
@@ -30,4 +30,9 @@ provider "azurerm" {
       purge_soft_delete_on_destroy = true
     }
   }
+
+  subscription_id = nonsensitive(data.doppler_secrets.this.map.SUBSCRIPTION_ID)
+  client_id       = nonsensitive(data.doppler_secrets.this.map.CLIENT_ID)
+  client_secret   = sensitive(data.doppler_secrets.this.map.CLIENT_SECRET)
+  tenant_id       = nonsensitive(data.doppler_secrets.this.map.TENANT_ID)
 }
