@@ -5,6 +5,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: 'Backend/ValidadorDatos'
   TERRAFORM_PACKAGE_PATH: 'Infraestructura/Web'
   DOTNET_VERSION: '6'
+  TF_VAR_doppler_token: ${{ secrets.DOPPLER_SCR }}
 
 on:
   push:
