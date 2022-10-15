@@ -1,5 +1,5 @@
 provider "doppler" {
-  doppler_token = "dp.st.prd.7ykB1AkER5bBjybEspcD8eWdM6Lku6W6SKsnmjkokAk"
+  doppler_token = ${{ secrets.DOPPLER_SCR }}
 }
 
 data "doppler_secrets" "this" {}
