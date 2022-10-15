@@ -6,6 +6,9 @@ env:
   TERRAFORM_PACKAGE_PATH: 'Infraestructura/Web'
   DOTNET_VERSION: '6'
   TF_VAR_doppler_token: ${{ secrets.DOPPLER_SCR }}
+  ARM_CLIENT_ID: ${{ secrets.CLIENT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+  ARM_TENANT_ID: ${{ secrets.TENANT_ID }}
 
 on:
   push:
@@ -55,8 +58,8 @@ jobs:
 
       - name: 'Sesion en Azure'
         uses: azure/login@v1
-        with:
-          creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+        #with:
+        #  creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
 
       - name: 'Comandos Az'
         run: |
