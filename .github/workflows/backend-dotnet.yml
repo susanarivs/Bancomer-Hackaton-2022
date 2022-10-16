@@ -5,7 +5,9 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: 'Backend/ValidadorDatos'
   TERRAFORM_PACKAGE_PATH: 'Infraestructura/Web'
   DOTNET_VERSION: '6'
+  # configuracion del secret manager
   TF_VAR_doppler_token: ${{ secrets.DOPPLER_SCR }}
+  # configuracion para terraform
   ARM_CLIENT_ID: ${{ secrets.CLIENT_ID }}
   ARM_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
   ARM_TENANT_ID: ${{ secrets.TENANT_ID }}
@@ -74,6 +76,10 @@ jobs:
         id: plan
         run: terraform plan -no-color
         continue-on-error: false
+      
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: terraform apply -auto-approve
 
   desplegar:
     runs-on: ubuntu-latest
