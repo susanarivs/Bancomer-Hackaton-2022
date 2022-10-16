@@ -59,7 +59,14 @@ namespace AltergoAPI.Nss.Core.Controllers
                     return BadRequest(err);
                 }
 
-                var client = new RestClient($"{_configuration["renapourl"]}/consultaCurp")
+                var uriBase = $"{_configuration["renapourl"]}";
+                if (string.IsNullOrWhiteSpace(uriBase))
+                {
+                    const string err = "No se encontró la configuración de la URL de Renapo";
+                    return BadRequest(err);
+                }
+
+                var client = new RestClient($"{uriBase}/consultaCurp")
                 {
                     Timeout = -1,
                     UserAgent = agente
