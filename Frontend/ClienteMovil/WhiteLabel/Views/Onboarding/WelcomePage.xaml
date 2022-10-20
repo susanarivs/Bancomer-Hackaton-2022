@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WhiteLabel"	
              NavigationPage.HasNavigationBar="false" 
              Style="{ StaticResource MainMenuOrModalBackgroundStyle }" 
-             Title="Pagina 1">
+             Title="Paso 1">
 
     <!-- CONTENEDOR PRINCIPAL -->
     <Grid
@@ -126,7 +126,7 @@
 				HorizontalOptions="FillAndExpand"
 				Spacing="10">
 
-                <Button Clicked="Button_Clicked"
+                <Button Command="{Binding StartCommand}"
 					Style="{ StaticResource OutlineInverseButtonStyle }"
 					Text="Deseo Mi Tarjeta"
 					VerticalOptions="EndAndExpand"
@@ -137,18 +137,6 @@
                         LandscapePhone=Fill,
                         PortraitTablet=Fill,
                         LandscapeTablet=Center }" />
-
-                <!--<Button
-					Style="{ StaticResource OutlineInverseButtonStyle }"
-					Text="Tengo Un QR"
-					VerticalOptions="EndAndExpand"
-					WidthRequest="{ grial:OnOrientationDouble
-                        LandscapeTablet=600 }"
-					HorizontalOptions="{ grial:OnOrientationLayoutOptions
-                        PortraitPhone=Fill,
-                        LandscapePhone=Fill,
-                        PortraitTablet=Fill,
-                        LandscapeTablet=Center }" />-->
 
             </StackLayout>
 

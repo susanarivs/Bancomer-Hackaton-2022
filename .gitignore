@@ -2,3 +2,7 @@
 Infraestructura/Web/.terraform/
 
 Infraestructura/Web/.terraform.lock.hcl
+
+Frontend/ClienteMovil/Facetec.Droid/bin/
+
+Frontend/ClienteMovil/Facetec.Droid/obj/

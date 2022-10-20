@@ -14,7 +14,6 @@ namespace WhiteLabel
 
         public static Page GetMainPage()
         {
-            //return new NavigationPage(new ChatMainPage());
             return new NavigationPage(new WelcomePage());
         }
     }

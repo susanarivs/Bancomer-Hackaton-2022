@@ -1,0 +1,27 @@
+﻿<metadata>
+	<remove-node path="/api/package[@name='com.facetec.sdk.libs']" />
+	<remove-node path="/api/package[@name='com.facetec.sdk']/class[@extends='android.app.Fragment']" />
+	<remove-node path="/api/package[@name='com.facetec.sdk']/class[@name='BuildConfig']" />
+	<remove-node path="/api/package[@name='com.facetec.sdk']/class[@name='D']" />
+
+	<add-node path="/api/package[@name='com.facetec.sdk']">
+		<class name="FaceTecSessionActivity" abstract="false" deprecated="not deprecated" extends="android.app.Activity" extends-generic-aware="android.app.Activity" final="true" static="false" visibility="public">
+			<method name="createAndLaunchSession" return="void" abstract="false" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public">
+				<parameter name="context" type="android.content.Context" />
+				<parameter name="processor" type="com.facetec.sdk.FaceTecFaceScanProcessor"/>
+				<parameter name="sessionToken" type="java.lang.String" />
+			</method>
+			<method name="createAndLaunchSession" return="void" abstract="false" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public">
+				<parameter name="context" type="android.content.Context" />
+				<parameter name="processor" type="com.facetec.sdk.FaceTecFaceScanProcessor"/>
+				<parameter name="idScanProcessor" type="com.facetec.sdk.FaceTecIDScanProcessor"/>
+				<parameter name="sessionToken" type="java.lang.String" />
+			</method>
+		</class>
+	</add-node>
+
+	<!-- tipos privados heredados-->
+	<add-node path="/api/package[@name='com.facetec.sdk']">
+	</add-node>
+
+</metadata>

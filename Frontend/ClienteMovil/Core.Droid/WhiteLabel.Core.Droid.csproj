@@ -145,7 +145,7 @@
     <Compile Include="WhiteLabel\Core\FormsVideoPlayerRenderer.cs" />
     <Compile Include="WhiteLabel\Core\FormsVideoView.cs" />
     <Compile Include="WhiteLabel\Core\GradientFactory.cs" />
-    <Compile Include="WhiteLabel\Core\GrialKit.cs" />
+    <Compile Include="WhiteLabel\Core\UiKit.cs" />
     <Compile Include="WhiteLabel\Core\GrialNavigationBarRenderer.cs" />
     <Compile Include="WhiteLabel\Core\GrialNavigationPageRenderer.cs" />
     <Compile Include="WhiteLabel\Core\ImageCellRenderer.cs" />

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhiteLabel.Views.Identity.OtpVerificationPage"
+             xmlns:grial="clr-namespace:WhiteLabel.Core;assembly=WhiteLabel.Core" 
+             xmlns:local="clr-namespace:WhiteLabel"
+             xmlns:behaviors="clr-namespace:WhiteLabel.Controls"
+             NavigationPage.HasNavigationBar="False"
+             Title="Paso 2">
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView
+				grial:Effects.IgnoreIOSSafeAreaOnScrollView="Left,Right,Top"
+				VerticalOptions="FillAndExpand"
+				Padding="{ StaticResource MainWrapperPadding }">
+                <!-- CONTENEDOR PRINCIPAL -->
+                <Grid
+					ColumnSpacing="0"
+					RowSpacing="0"
+					Style="{ StaticResource SimpleLoginFormsContentStyle }"
+					HorizontalOptions="Fill"
+					VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+							Height="Auto" />
+                        <RowDefinition
+							Height="*" />
+                        <RowDefinition
+							Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- ENCABEZADO -->
+                    <StackLayout
+						Grid.Row="0"
+						Spacing="5"
+						Padding="0,20,0,0"
+						InputTransparent="true">
+
+                        <!-- TEXTO INSTRUCCIONES -->
+                        <Label
+							Text="Introduzca el folio de cuatro digitos"
+							HorizontalOptions="Center"
+							FontSize="{ grial:OnOrientationDouble
+                                PortraitPhone=15,
+                                LandscapePhone=15,
+                                PortraitTablet=18,
+                                LandscapeTablet=18 }" />
+
+                        <!--SEPARADOR-->
+                        <BoxView
+							WidthRequest="80"
+							HeightRequest="1"
+							HorizontalOptions="Center"
+							VerticalOptions="End"
+							BackgroundColor="{ DynamicResource BaseTextColor }" />
+                    </StackLayout>
+
+                    <!---CONTENEDOR DE CAMPOS-->
+                    <Grid
+						Grid.Row="1"
+						RowSpacing="30"
+						ColumnSpacing="15"
+						Padding="0,20,0,20"
+						VerticalOptions="Center"
+						Style="{ StaticResource ResponsiveLandscapeMarginStyle }">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+								Width="Auto" />
+                            <ColumnDefinition
+								Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition
+								Height="*" />
+                            <RowDefinition
+								Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!-- ICONO -->
+                        <Label
+							Grid.Column="0"
+							Grid.Row="0"
+							FontSize="24"
+							Text="{ x:Static local:GrialIconsFont.Lock }"
+							Style="{ StaticResource FontIcon }"
+							HorizontalTextAlignment="Center"
+							TextColor="{ DynamicResource ComplementColor }"
+							VerticalOptions="Center"
+							HorizontalOptions="Center" />
+
+                        <!--ENTRADA PARA FOLIO-->
+                        <Entry
+                            Keyboard="Numeric"
+							Grid.Column="1"
+							Grid.Row="0"
+							VerticalOptions="Center"
+							HorizontalOptions="FillAndExpand"
+							Placeholder="Folio Personal">
+                            <Entry.Behaviors>
+                                <behaviors:MaskedBehavior Mask="XXX-XXXX"/>
+                            </Entry.Behaviors>
+                        </Entry>
+
+                    </Grid>
+
+                    <!-- BOTON -->
+                    <StackLayout
+						Grid.Row="2"
+						Spacing="10"
+						Padding="0,10,0,0"
+						HorizontalOptions="FillAndExpand"
+						VerticalOptions="End">
+                        
+                        <!-- SIGUIENTE -->
+                        <Button Command="{Binding StartEnrollCommand}"
+							Style="{ StaticResource PrimaryActionButtonStyle }"
+							VerticalOptions="End"
+							Text="Siguiente"
+							WidthRequest="{ 
+                                grial:OnOrientationDouble
+                                    LandscapePhone=200,
+                                    LandscapeTablet=400 
+                            }"
+							HorizontalOptions="{ 
+                                grial:OnOrientationLayoutOptions
+                                    PortraitPhone=Fill,
+                                    LandscapePhone=Center,
+                                    PortraitTablet=Fill,
+                                    LandscapeTablet=Center 
+                            }" />
+
+                    </StackLayout>
+
+                </Grid>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Specialized;
 using System.Threading.Tasks;
+using WhiteLabel.Views.Identity;
 using Xamarin.Forms;
 
 namespace WhiteLabel.Views.Onboarding.Templates
@@ -26,7 +27,7 @@ namespace WhiteLabel.Views.Onboarding.Templates
             //{
             //    await Navigation.PopModalAsync();
             //}
-            await Navigation.PushAsync(new ChatMainPage());
+            await Navigation.PushAsync(new OtpVerificationPage());
             Navigation.RemovePage(this);
         }
 

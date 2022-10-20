@@ -9,9 +9,6 @@ using Android.App;
 [assembly: AssemblyCompany(AssemblyGlobal.Company)]
 [assembly: AssemblyProduct(AssemblyGlobal.ProductLine + " - " + "Kit (Android)")]
 [assembly: AssemblyCopyright(AssemblyGlobal.Copyright)]
-
-[assembly: GrialVersion("3.0.60.0")]
-
 [assembly: ExportRenderer(typeof(Entry), typeof(EntryRenderer))]
 [assembly: ExportRenderer(typeof(Editor), typeof(EditorRenderer))]
 [assembly: ExportRenderer(typeof(Switch), typeof(SwitchRenderer))]
@@ -28,15 +25,11 @@ using Android.App;
 [assembly: ExportRenderer(typeof(NavigationPage), typeof(GrialNavigationPageRenderer))]
 [assembly: ExportRenderer(typeof(Picker), typeof(PickerRenderer))]
 [assembly: ExportRenderer(typeof(ScrollView), typeof(WhiteLabel.Droid.ScrollViewRendererOrientationFix))]
-//[assembly: ExportRenderer(typeof(Slider), typeof(WhiteLabel.Core.SliderRenderer))]
-
 [assembly: UsesPermission(Android.Manifest.Permission.Flashlight)]
 [assembly: UsesPermission(Android.Manifest.Permission.AccessNetworkState)]
-// Needed for Picking photo/video
 [assembly: UsesPermission(Android.Manifest.Permission.ReadExternalStorage)]
-
-// Needed for Taking photo/video
 [assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
 [assembly: UsesPermission(Android.Manifest.Permission.Camera)]
+[assembly: UsesPermission(Android.Manifest.Permission.Internet)]
 [assembly: UsesFeature("android.hardware.camera", Required = true)]
 [assembly: UsesFeature("android.hardware.camera.autofocus", Required = true)]

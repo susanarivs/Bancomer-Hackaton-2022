@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace WhiteLabel.Core
 {
-    public class GrialKit
+    public class UiKit
     {
         public static void Init(Activity activity)
         {

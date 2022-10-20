@@ -17,8 +17,7 @@ namespace WhiteLabel.Views.Onboarding
         {
             InitializeComponent();
 
-            //Vista-Modelo
-            BindingContext = new WalkthroughViewModel(Close, MoveNext);
+            BindingContext = new InstructionsViewModel(Close, MoveNext);
         }
     }
 }

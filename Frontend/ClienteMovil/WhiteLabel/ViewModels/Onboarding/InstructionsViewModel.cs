@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace WhiteLabel.ViewModels.Onboarding
 {
-    public class WalkthroughViewModel
+    public class InstructionsViewModel
     {
         private readonly Command _closeCommand;
         private readonly Command _moveNextCommand;
@@ -16,7 +16,7 @@ namespace WhiteLabel.ViewModels.Onboarding
         private bool _closing;
         private bool _movingNext;
 
-        public WalkthroughViewModel(Func<Task> closeAction, Func<Task> moveNextAction)
+        public InstructionsViewModel(Func<Task> closeAction, Func<Task> moveNextAction)
         {
             _closeAction = closeAction;
             _moveNextAction = moveNextAction;

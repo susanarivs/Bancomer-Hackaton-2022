@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WhiteLabel.ViewModels.Onboarding;
+using WhiteLabel.ViewModels.Identity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace WhiteLabel.Views.Onboarding
+namespace WhiteLabel.Views.Identity
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WelcomePage : ContentPage
+    public partial class EnrollmentPage : ContentPage
     {
-        public WelcomePage()
+        public EnrollmentPage()
         {
             InitializeComponent();
 
-            BindingContext = new WelcomeViewModel(Navigation);
+            BindingContext = new EnrollmentViewModel();
         }
     }
 }
