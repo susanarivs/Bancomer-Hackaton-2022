@@ -2,7 +2,7 @@
 {
 	internal static class AssemblyGlobal
 	{
-		public const string Company = "Binaria";
+		public const string Company = "Bancomer";
 
 		public const string ProductLine = "WhiteLabel";
 

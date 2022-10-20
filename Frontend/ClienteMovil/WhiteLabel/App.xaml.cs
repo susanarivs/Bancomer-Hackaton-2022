@@ -1,3 +1,4 @@
+using WhiteLabel.Views.Onboarding;
 using Xamarin.Forms;
 
 namespace WhiteLabel
@@ -13,7 +14,8 @@ namespace WhiteLabel
 
         public static Page GetMainPage()
         {
-            return new NavigationPage(new ChatMainPage());
+            //return new NavigationPage(new ChatMainPage());
+            return new NavigationPage(new WelcomePage());
         }
     }
 }

@@ -5,10 +5,10 @@
     <x:Double
 		x:Key="BaseButtonHeight">44</x:Double>
     <x:Int32
-		x:Key="BaseButtonCornerRadius">22</x:Int32>
+		x:Key="BaseButtonCornerRadius">4</x:Int32>
     <x:Double
 		x:Key="BaseButtonBorderWith">0</x:Double>
-    
+
     <Color
 		x:Key="BaseButtonBorderColor">Transparent</Color>
 
@@ -27,15 +27,15 @@
         ...but this is: 
             #FF169CEE 
     -->
-    <!-- Grial Theme Exported Colors -->
+    <!-- Theme Exported Colors -->
     <Color
-		x:Key="AccentColor">#FFF8036C</Color>
+		x:Key="AccentColor">#FFC51C5D</Color>
     <Color
-		x:Key="BaseTextColor">#666666</Color>
+		x:Key="BaseTextColor">#4C4A4B</Color>
     <Color
 		x:Key="ListViewSelectedItemBackgroundColor">#11000000</Color>
     <Color
-		x:Key="SplashBackgroundColor">#4F29BC</Color>
+		x:Key="SplashBackgroundColor">#C51C5D</Color>
 
     <Color
 		x:Key="BrandBlockTextColor">#FFFFFF</Color>
@@ -44,16 +44,16 @@
 
     <!-- By Default same color as AccentColor -->
     <Color
-		x:Key="NavigationBarStartBackgroundColor">#A32CA3</Color>
+		x:Key="NavigationBarStartBackgroundColor">#921243</Color>
     <Color
-		x:Key="NavigationBarEndBackgroundColor">#4B29BD</Color>
+		x:Key="NavigationBarEndBackgroundColor">#C42978</Color>
     <Color
 		x:Key="NavigationBarTextColor">#FFFFFF</Color>
 
     <Color
 		x:Key="MainMenuOverlayBackgroundColor">#22F1F3F5</Color>
-    
-    <!-- In Grial 3 these pointed to MainMenu color resources -->
+
+    <!-- these pointed to MainMenu color resources -->
     <Color
 		x:Key="SecondaryPageBackgroundColor">#FFFFFF</Color>
     <Color
@@ -63,11 +63,11 @@
     <Color
 		x:Key="DataGridHeaderRowBackgroundColor">#F6F7F9</Color>
     <Color
-		x:Key="DataGridHeaderTextColor">#546F7A</Color>
+		x:Key="DataGridHeaderTextColor">#C51C5D</Color>
     <Color
 		x:Key="DataGridBackgroundColor">White</Color>
     <Color
-		x:Key="DataGridCellTextColor">#546F7A</Color>
+		x:Key="DataGridCellTextColor">#4C4A4B</Color>
 
     <!-- DIALOGS & POPUPS -->
     <x:Double
@@ -98,7 +98,7 @@
     <Thickness
 		x:Key="TagItemPadding">10,0</Thickness>
     <x:Double
-		x:Key="TagItemCornerRadius">13</x:Double>
+		x:Key="TagItemCornerRadius">4</x:Double>
     <x:Double
 		x:Key="TagItemFontSize">12</x:Double>
     <x:Double
@@ -106,25 +106,25 @@
     <x:Double
 		x:Key="TagItemImageSize">16</x:Double>
     <Color
-		x:Key="TagItemBackgroundColor">#4F29BC</Color>
+		x:Key="TagItemBackgroundColor">#670228</Color>
     <Color
 		x:Key="TagItemTextColor">White</Color>
 
     <!-- CIRCLE ACTION BUTTON FLAT -->
     <Color
-		x:Key="CircleActionButtonFlatBackgroundColor">#4F29BC</Color>
+		x:Key="CircleActionButtonFlatBackgroundColor">#670228</Color>
     <Color
-		x:Key="CircleActionButtonFlatBorderColor">#646ABD</Color>
+		x:Key="CircleActionButtonFlatBorderColor">#670228</Color>
     <Color
 		x:Key="CircleActionButtonFlatIconColor">#FFFFFF</Color>
     <Color
 		x:Key="CircleActionButtonFlatTextColor">#666666</Color>
-    
+
     <!-- GENERAL COLORS -->
     <Color
 		x:Key="InverseTextColor">#FFFFFF</Color>
     <Color
-		x:Key="BrandColor">#ad1457</Color>
+		x:Key="BrandColor">#980646</Color>
     <Color
 		x:Key="BrandNameColor">#FFFFFF</Color>
     <Color
@@ -135,7 +135,7 @@
 		x:Key="OverImageHighlightedColor"
 		x:TypeArguments="Color"
 		Default="{ StaticResource AccentColor }" />
-    
+
     <Color
 		x:Key="EcommercePromoTextColor">#FFFFFF</Color>
     <Color
@@ -146,28 +146,28 @@
 		x:Key="ListViewItemTextColor">#666666</Color>
     <Color
 		x:Key="AboutHeaderBackgroundColor">#FFFFFF</Color>
-    
+
     <Color
 		x:Key="BasePageColor">#FFFFFF</Color>
     <Color
 		x:Key="BaseTabbedPageColor">#fafafa</Color>
-    
+
     <Color
 		x:Key="MainWrapperBackgroundColor">#F5F6F8</Color>
-    
+
     <Color
 		x:Key="CategoriesListIconColor">#55000000</Color>
     <Color
 		x:Key="DashboardIconColor">#FFFFFF</Color>
-    
+
     <!-- COMPLEMENT COLORS -->
     <Color
-		x:Key="ComplementColor">#5D30F3</Color>
+		x:Key="ComplementColor">#670228</Color>
     <Color
 		x:Key="TranslucidBlack">#55000000</Color>
     <Color
 		x:Key="TranslucidWhite">#11ffffff</Color>
-    
+
     <!-- INDICATOR COLORS -->
     <Color
 		x:Key="OkColor">#22C064</Color>
@@ -179,18 +179,18 @@
 		x:Key="NotificationColor">#1274d1</Color>
     <Color
 		x:Key="DisabledColor">#bbbbbb</Color>
-    
+
     <!-- BUTTONS COLORS -->
     <Color
-		x:Key="PrimaryActionButtonStartColor">#6233ff</Color>
+		x:Key="PrimaryActionButtonStartColor">#C42978</Color>
     <Color
-		x:Key="PrimaryActionButtonEndColor">#FF0C69</Color>
+		x:Key="PrimaryActionButtonEndColor">#921243</Color>
 
     <Color
 		x:Key="SaveButtonColor">#22c064</Color>
     <Color
 		x:Key="DeleteButtonColor">#D50000</Color>
-    
+
     <Color
 		x:Key="TranslucidButtonColor">#33FFFFFF</Color>
 
@@ -218,7 +218,7 @@
     <x:Double
 		x:Key="EntryHeightRequest">44</x:Double>
     <x:Single
-		x:Key="EntryBorderCornerRadiusCornerRadius">22</x:Single>
+		x:Key="EntryBorderCornerRadiusCornerRadius">4</x:Single>
     <grial:BorderStyle
 		x:Key="EntryBorderStyle">RoundRect</grial:BorderStyle>
 
@@ -230,11 +230,11 @@
     <x:Double
 		x:Key="EditorFontSize">14</x:Double>
     <x:Single
-		x:Key="EditorBorderCornerRadiusCornerRadius">11</x:Single>
+		x:Key="EditorBorderCornerRadiusCornerRadius">4</x:Single>
 
     <Color
-		x:Key="RoundedLabelBackgroundColor">#525ABB</Color>
-    
+		x:Key="RoundedLabelBackgroundColor">#670228</Color>
+
     <!-- MAIN MENU COLORS -->
     <Color
 		x:Key="MainMenuHeaderBackgroundColor">Transparent</Color>
@@ -246,23 +246,23 @@
 		x:Key="MainMenuTextColor">#FFFFFF</Color>
     <Color
 		x:Key="MainMenuIconColor">#FFFFFF</Color>
-    
+
     <!-- SEPARATORS COLORS -->
     <Color
 		x:Key="ListViewSeparatorColor">#D3D3D3</Color>
     <Color
 		x:Key="BaseSeparatorColor">#7b7b7b</Color>
-    
+
     <!-- CHAT COLORS -->
     <Color
-		x:Key="ChatRightBalloonBackgroundColor">#525ABB</Color>
+		x:Key="ChatRightBalloonBackgroundColor">#670228</Color>
     <Color
 		x:Key="ChatBalloonFooterTextColor">#FFFFFF</Color>
     <Color
 		x:Key="ChatRightTextColor">#FFFFFF</Color>
     <Color
 		x:Key="ChatLeftTextColor">#FFFFFF</Color>
-    
+
     <!-- OnPlatform does not support DynamicResource so to make the switch color dynamic in iOS it's included
          in each theme. Android's OnColor only affects the track but not the thumb, so it shouldn't be used -->
     <Style
@@ -278,14 +278,14 @@
             </OnPlatform>
         </Setter>
     </Style>
-    
+
     <x:Double
 		x:Key="MainMenuBackgroundImageOpacity">0.25</x:Double>
 
     <!--RATINGS COLORS-->
     <Color
 		x:Key="RatingsColor">#ffb300</Color>
-    
+
     <!-- TAB CONTROL COLORS -->
     <Color
 		x:Key="AndroidTabStripBackgroundColor">#11000000</Color>
@@ -302,13 +302,13 @@
     <OnPlatform
 		x:Key="AndroidSelectedBackgroundColor"
 		x:TypeArguments="Color"
-		Default="{ StaticResource AccentColor }" />
+		Default="{ StaticResource ComplementColor }" />
     <Color
 		x:Key="SimpleTabDefaultStateTextColor">#A7A7A7</Color>
-    
+
 
     <!-- GRADIENTS -->
-    
+
     <!-- APP NAVIGATION BAR -->
     <grial:LinearGradient
 		x:Key="NavigationBarGradient"
@@ -357,7 +357,7 @@
 			Position="1" />
     </grial:LinearGradient>
 
-    
+
     <!-- SPECIFIC -->
 
     <!-- CUSTOM ACTION SHEET -->
@@ -507,7 +507,7 @@
 			Color="{ StaticResource MainWrapperBackgroundColor }"
 			Opacity="0"
 			Position="0" />
-    
+
         <grial:GradientColor
 			Color="{ StaticResource MainWrapperBackgroundColor }"
 			Opacity="0.8"

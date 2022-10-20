@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:WalkthroughBasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhiteLabel.Views.Onboarding.InstructionsPage"
+             xmlns:grial="clr-namespace:WhiteLabel.Core;assembly=WhiteLabel.Core" 
+             xmlns:local="clr-namespace:WhiteLabel.Views.Onboarding.Templates" 
+             xmlns:local2="clr-namespace:WhiteLabel"
+             NavigationPage.HasNavigationBar="False">
+
+    <local:WalkthroughStepItemTemplate
+		BackgroundColor="{ DynamicResource BasePageColor}"
+		Header="Registrate"
+		Text="Introduce el número de folio de tu invitación."
+		IconText="{ x:Static local2:GrialIconsFont.Hashtag }"
+		IconColor="#5F7DD4"
+		ButtonBackgroundColor="#5F7DD4"
+		ButtonText="Siguiente" />
+
+    <local:WalkthroughStepItemTemplate
+		BackgroundColor="{ DynamicResource BasePageColor}"
+		Header="Identificate"
+		Text="Ten a la mano una identificación oficial vigente."
+		IconText="{ x:Static local2:GrialIconsFont.Camera }"
+		IconColor="#7C4ECD"
+		ButtonBackgroundColor="#7C4ECD"
+		ButtonText="Siguiente" />
+
+    <local:WalkthroughStepItemTemplate
+		BackgroundColor="{ DynamicResource BasePageColor}"
+		Header="Firma"
+		Text="Firma tu nombre en el espacio indicado."
+		IconText="{ x:Static local2:GrialIconsFont.Edit3 }"
+		IconColor="#E51E61"
+		ButtonBackgroundColor="#E51E61"
+		ButtonText="Entendido" />
+
+</local:WalkthroughBasePage>

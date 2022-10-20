@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhiteLabel.Views.Onboarding.WelcomePage"
+             xmlns:grial="clr-namespace:WhiteLabel.Core;assembly=WhiteLabel.Core" 
+             xmlns:local="clr-namespace:WhiteLabel"	
+             NavigationPage.HasNavigationBar="false" 
+             Style="{ StaticResource MainMenuOrModalBackgroundStyle }" 
+             Title="Pagina 1">
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <Grid
+		HorizontalOptions="FillAndExpand"
+		VerticalOptions="FillAndExpand">
+
+        <Grid
+			grial:Effects.ApplyIOSSafeAreaAsPadding="Bottom"
+			grial:Effects.IOSSafeAreaBottomSize="15"
+			Padding="20,60,20,20"
+			Style="{ StaticResource ResponsiveLandscapeMarginStyle }">
+
+            <Grid.RowDefinitions>
+                <RowDefinition
+					Height="Auto" />
+                <RowDefinition
+					Height="*" />
+                <RowDefinition
+					Height="Auto" />
+            </Grid.RowDefinitions>
+
+
+            <Grid
+				Grid.Row="0"
+				ColumnSpacing="0"
+				Padding="0"
+				Style="{ StaticResource BrandContainerStyle }">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+						Width="Auto" />
+                    <ColumnDefinition
+						Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- LOGO -->
+                <StackLayout
+					Grid.Column="1"
+					Orientation="Horizontal"
+					Spacing="10">
+
+                    <Label
+						Margin="10,0,0,0"
+						TextColor="{ DynamicResource InverseTextColor }"
+						FontSize="74"
+						Text="{ x:Static local:GrialIconsFont.LogoGrialSquare }"
+						Style="{StaticResource FontIcon}"
+						HorizontalOptions="Start"
+						VerticalTextAlignment="Center" />
+
+                    <StackLayout
+						Spacing="0"
+						VerticalOptions="Center">
+
+                        <Label
+							TextColor="{ DynamicResource InverseTextColor }"
+							FontSize="24"
+							Text="Reto Bancomer"
+							FontAttributes="Bold"
+							VerticalTextAlignment="Start" />
+
+                        <Label
+							TextColor="{ DynamicResource InverseTextColor }"
+							FontSize="24"
+							Text="Octubre 2022"
+							VerticalTextAlignment="Start" />
+
+                    </StackLayout>
+                </StackLayout>
+
+            </Grid>
+
+            <!--TEXTO INFORMATIVO-->
+            <StackLayout
+				Grid.Row="1"
+				Spacing="10"
+				Orientation="Vertical"
+				VerticalOptions="Center"
+				TranslationY="-20"
+				Padding="{ grial:OnOrientationDouble
+                    Default=20,
+                    PortraitTablet=20,
+                    LandscapeTablet=20 }">
+
+                <Label
+					LineBreakMode="WordWrap"
+					Text="Retargeting TC"
+					TextColor="{ DynamicResource InverseTextColor }"
+					VerticalTextAlignment="Center"
+					FontAttributes="Bold"
+					FontSize="{ OnIdiom Phone=26, Tablet=36 }" />
+
+                <Label
+					LineBreakMode="WordWrap"
+					Text="Prueba de concepto de equipo Smallville"
+					TextColor="{ DynamicResource InverseTextColor }"
+					VerticalTextAlignment="Center"
+					FontSize="{ OnIdiom Phone=17, Tablet=27 }"
+					IsVisible="{ grial:OnOrientationBool 
+                        Default=true,
+                        Landscape=false
+                    }" />
+
+                <!-- VERSION -->
+                <local:Tag
+					BackgroundColor="#88000000"
+					FontSize="10"
+					HorizontalOptions="Start"
+					Text="Version 1.0"
+					Margin="-4,0" />
+            </StackLayout>
+
+            <!--BOTONES-->
+            <StackLayout
+				Grid.Row="2"
+				VerticalOptions="End"
+				HorizontalOptions="FillAndExpand"
+				Spacing="10">
+
+                <Button Clicked="Button_Clicked"
+					Style="{ StaticResource OutlineInverseButtonStyle }"
+					Text="Deseo Mi Tarjeta"
+					VerticalOptions="EndAndExpand"
+					WidthRequest="{ grial:OnOrientationDouble
+                        LandscapeTablet=600 }"
+					HorizontalOptions="{ grial:OnOrientationLayoutOptions
+                        PortraitPhone=Fill,
+                        LandscapePhone=Fill,
+                        PortraitTablet=Fill,
+                        LandscapeTablet=Center }" />
+
+                <!--<Button
+					Style="{ StaticResource OutlineInverseButtonStyle }"
+					Text="Tengo Un QR"
+					VerticalOptions="EndAndExpand"
+					WidthRequest="{ grial:OnOrientationDouble
+                        LandscapeTablet=600 }"
+					HorizontalOptions="{ grial:OnOrientationLayoutOptions
+                        PortraitPhone=Fill,
+                        LandscapePhone=Fill,
+                        PortraitTablet=Fill,
+                        LandscapeTablet=Center }" />-->
+
+            </StackLayout>
+
+        </Grid>
+    </Grid>
+</ContentPage>
