@@ -29,13 +29,13 @@
     -->
     <!-- Theme Exported Colors -->
     <Color
-		x:Key="AccentColor">#FFC51C5D</Color>
+		x:Key="AccentColor">#FF1c62c5</Color>
     <Color
 		x:Key="BaseTextColor">#4C4A4B</Color>
     <Color
 		x:Key="ListViewSelectedItemBackgroundColor">#11000000</Color>
     <Color
-		x:Key="SplashBackgroundColor">#C51C5D</Color>
+		x:Key="SplashBackgroundColor">#1c62c5</Color>
 
     <Color
 		x:Key="BrandBlockTextColor">#FFFFFF</Color>
@@ -44,9 +44,9 @@
 
     <!-- By Default same color as AccentColor -->
     <Color
-		x:Key="NavigationBarStartBackgroundColor">#921243</Color>
+		x:Key="NavigationBarStartBackgroundColor">#2478ed</Color>
     <Color
-		x:Key="NavigationBarEndBackgroundColor">#C42978</Color>
+		x:Key="NavigationBarEndBackgroundColor">#1758b3</Color>
     <Color
 		x:Key="NavigationBarTextColor">#FFFFFF</Color>
 
@@ -63,7 +63,7 @@
     <Color
 		x:Key="DataGridHeaderRowBackgroundColor">#F6F7F9</Color>
     <Color
-		x:Key="DataGridHeaderTextColor">#C51C5D</Color>
+		x:Key="DataGridHeaderTextColor">#1c62c5</Color>
     <Color
 		x:Key="DataGridBackgroundColor">White</Color>
     <Color
@@ -106,15 +106,15 @@
     <x:Double
 		x:Key="TagItemImageSize">16</x:Double>
     <Color
-		x:Key="TagItemBackgroundColor">#670228</Color>
+		x:Key="TagItemBackgroundColor">#3a71bd</Color>
     <Color
 		x:Key="TagItemTextColor">White</Color>
 
     <!-- CIRCLE ACTION BUTTON FLAT -->
     <Color
-		x:Key="CircleActionButtonFlatBackgroundColor">#670228</Color>
+		x:Key="CircleActionButtonFlatBackgroundColor">#3a71bd</Color>
     <Color
-		x:Key="CircleActionButtonFlatBorderColor">#670228</Color>
+		x:Key="CircleActionButtonFlatBorderColor">#3a71bd</Color>
     <Color
 		x:Key="CircleActionButtonFlatIconColor">#FFFFFF</Color>
     <Color
@@ -124,7 +124,7 @@
     <Color
 		x:Key="InverseTextColor">#FFFFFF</Color>
     <Color
-		x:Key="BrandColor">#980646</Color>
+		x:Key="BrandColor">#065698</Color>
     <Color
 		x:Key="BrandNameColor">#FFFFFF</Color>
     <Color
@@ -162,7 +162,7 @@
 
     <!-- COMPLEMENT COLORS -->
     <Color
-		x:Key="ComplementColor">#670228</Color>
+		x:Key="ComplementColor">#3a71bd</Color>
     <Color
 		x:Key="TranslucidBlack">#55000000</Color>
     <Color
@@ -182,9 +182,9 @@
 
     <!-- BUTTONS COLORS -->
     <Color
-		x:Key="PrimaryActionButtonStartColor">#C42978</Color>
+		x:Key="PrimaryActionButtonStartColor">#1758b3</Color>
     <Color
-		x:Key="PrimaryActionButtonEndColor">#921243</Color>
+		x:Key="PrimaryActionButtonEndColor">#2478ed</Color>
 
     <Color
 		x:Key="SaveButtonColor">#22c064</Color>
@@ -233,7 +233,7 @@
 		x:Key="EditorBorderCornerRadiusCornerRadius">4</x:Single>
 
     <Color
-		x:Key="RoundedLabelBackgroundColor">#670228</Color>
+		x:Key="RoundedLabelBackgroundColor">#3a71bd</Color>
 
     <!-- MAIN MENU COLORS -->
     <Color
@@ -255,7 +255,7 @@
 
     <!-- CHAT COLORS -->
     <Color
-		x:Key="ChatRightBalloonBackgroundColor">#670228</Color>
+		x:Key="ChatRightBalloonBackgroundColor">#3a71bd</Color>
     <Color
 		x:Key="ChatBalloonFooterTextColor">#FFFFFF</Color>
     <Color

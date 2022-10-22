@@ -2,7 +2,7 @@
 {
     public static class FacetecConsts
     {
-        public const string DeviceKeyIdentifier = "dlxIXaN6cV8DCILDeZNngjkPjdN7ybC7";
+        public const string DeviceKeyIdentifier = "d1N7DazmrmmUu440g0di0dIC5unOTHxt";
 
         public const string BaseURL = "https://api.facetec.com/api/v3.1/biometrics";
 

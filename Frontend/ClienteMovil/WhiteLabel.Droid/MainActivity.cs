@@ -29,7 +29,7 @@ namespace WhiteLabel.Droid
         public int ScanZoomActivityRequestCode => 1002;
 
         public IProcessor latestProcessor;
-        
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.Window?.RequestFeature(WindowFeatures.ActionBar);

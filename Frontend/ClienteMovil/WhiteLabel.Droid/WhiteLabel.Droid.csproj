@@ -246,6 +246,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Renderers\CustomEntryRenderer.cs" />
     <Compile Include="Services\FacetecConsts.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

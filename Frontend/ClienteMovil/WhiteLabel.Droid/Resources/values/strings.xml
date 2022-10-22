@@ -1,4 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Registro</string>
+	<string name="FaceTec_accessibility_cancel_button">Cancelar</string>
+
+	<string name="FaceTec_instructions_header_ready_1">Preparese para el</string>
+	<string name="FaceTec_instructions_header_ready_2">reconocimiento facial</string>
+	<string name="FaceTec_instructions_message_ready_1">Ubique su rostro dentro del marco y acerquese</string>
+	<string name="FaceTec_instructions_message_ready_2">después haga clic en continuar.</string>
+
+	<string name="FaceTec_action_continue">CONTINUAR</string>
+	<string name="FaceTec_action_im_ready">ESTOY LISTO</string>
+
+	<string name="FaceTec_feedback_center_face">Centre Su Rostro</string>
+	<string name="FaceTec_feedback_face_not_found">Enmarque su Rostro</string>
+	<string name="FaceTec_feedback_move_phone_away">Alejese</string>
+	<string name="FaceTec_feedback_move_away_web">Alejese</string>
+	<string name="FaceTec_feedback_move_phone_closer">Acerquese</string>
+	<string name="FaceTec_feedback_move_phone_to_eye_level">Teléfono a la altura de los ojos</string>
+	<string name="FaceTec_feedback_move_to_eye_level_web">Mire a la Camara</string>
+	<string name="FaceTec_feedback_face_not_looking_straight_ahead">Mire hacia el frente</string>
+	<string name="FaceTec_presession_position_face_straight_in_oval">Mire hacia el frente</string>
+	<string name="FaceTec_feedback_face_not_upright">Mantenga la Cabeza Recta</string>
+	<string name="FaceTec_feedback_face_not_upright_mobile">Mantenga la Cabeza Recta</string>
+	<string name="FaceTec_feedback_hold_steady">No Se Mueva</string>
+	<string name="FaceTec_feedback_move_web_closer">Acerquese</string>
+	<string name="FaceTec_feedback_move_web_even_closer">Mas Cerca</string>
+	<string name="FaceTec_feedback_use_even_lighting">Ilumine su rostro uniformemente</string>
+
+	<string name="FaceTec_presession_frame_your_face">Ubique su rostro en el marco</string>
+	<string name="FaceTec_presession_look_straight_ahead">Mire hacia el frente</string>
+	<string name="FaceTec_presession_hold_steady3">Espere: 3</string>
+	<string name="FaceTec_presession_hold_steady2">Espere: 2</string>
+	<string name="FaceTec_presession_hold_steady1">Espere: 1</string>
+	<string name="FaceTec_presession_hold_steady_1">Espere: 1</string>
+	<string name="FaceTec_presession_hold_steady_2">Espere: 2</string>
+	<string name="FaceTec_presession_hold_steady_3">Espere: 3</string>
+	
+	<string name="FaceTec_presession_eyes_straight_ahead">Mire hacia el frente</string>
+	<string name="FaceTec_presession_remove_dark_glasses">Retirese las gafas de sol</string>
+	<string name="FaceTec_presession_neutral_expression">Mantengase neutral, no sonría</string>
+	<string name="FaceTec_presession_conditions_too_bright">Ambiente muy luminoso</string>
+	<string name="FaceTec_presession_brighten_your_environment">Ambiente muy oscuro</string>
+
+	<string name="FaceTec_result_facescan_upload_message">Enviando...</string>
+	<string name="FaceTec_result_idscan_upload_message">Enviando...</string>
+
+	<string name="FaceTec_retry_header">¿Desea intentar nuevamente?</string>
+	<string name="FaceTec_retry_subheader_message">Siga el ejemplo de la foto ideal:</string>
+	<string name="FaceTec_retry_your_image_label">Su foto</string>
+	<string name="FaceTec_retry_ideal_image_label">Foto ideal</string>
+	<string name="FaceTec_retry_instruction_message_1">Expresion Neutra, Sin Sonreir</string>
+	<string name="FaceTec_retry_instruction_message_2">Evite el deslumbramiento y la iluminación extrema.</string>
+	<string name="FaceTec_retry_instruction_message_3">Limpie su cámara</string>
+	<string name="FaceTec_action_try_again">INTENTAR NUEVAMENTE</string>
+
+	<string name="FaceTec_camera_permission_header">Activar Camara</string>
+	<string name="FaceTec_camera_permission_message_enroll">Habilite su cámara frontal para poder identificarlo.</string>
+	<string name="FaceTec_camera_permission_message_auth">Los permisos de su cámara están deshabilitados.</string>
+	<string name="FaceTec_camera_permission_enable_camera">HABILITAR CÁMARA</string>
+	<string name="FaceTec_camera_permission_launch_settings">AJUSTES</string>
+	<string name="FaceTec_action_ok">ACEPTAR</string>
+
+	<string name="FaceTec_enter_fullscreen_header">Selfie a Pantalla Completa </string>
+	<string name="FaceTec_enter_fullscreen_message">Antes de comenzar, haga clic en el botón de abajo para abrir el modo de pantalla completa </string>
+	<string name="FaceTec_enter_fullscreen_action">Abrir Pantalla Completa </string>
+
+	<string name="FaceTec_initializing_camera">Iniciando la Camara... </string>
+	<string name="FaceTec_initializing_camera_still_loading">Cifrando el contenido de la cámara... </string>
+
+	<string name="FaceTec_idscan_type_selection_header">Prepare una Identificacion</string>
+	<string name="FaceTec_action_select_id_card">Documento Con Fotografia</string>
+	<string name="FaceTec_action_select_passport">PASAPORTE </string>
+	<string name="FaceTec_idscan_capture_id_card_front_instruction_message">Mostrar el frente del documento con foto </string>
+	<string name="FaceTec_idscan_capture_id_card_back_instruction_message">Mostrar el reverso del documento </string>
+	<string name="FaceTec_idscan_capture_passport_instruction_message">Mostrar página de fotos en el pasaporte </string>
+	<string name="FaceTec_action_take_photo">TOMAR FOTO</string>
+	<string name="FaceTec_idscan_review_id_card_front_instruction_message">Confirme que la foto es clara y legible </string>
+	<string name="FaceTec_idscan_review_id_card_back_instruction_message">Confirme que sea claro y legible </string>
+	<string name="FaceTec_idscan_review_passport_instruction_message">Confirme que la foto es clara y legible </string>
+	<string name="FaceTec_action_accept_photo">Aceptar</string>
+	<string name="FaceTec_action_retake_photo">Recapturar</string>
+
+	<string name="FaceTec_result_idscan_unsuccess_message">La foto del documento no coincide con el rostro del usuario </string>
 </resources>

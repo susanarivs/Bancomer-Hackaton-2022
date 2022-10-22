@@ -20862,107 +20862,107 @@ namespace WhiteLabel.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7F0D004F
-			public const int abc_action_bar_home_description = 2131558479;
-			
-			// aapt resource value: 0x7F0D0050
-			public const int abc_action_bar_up_description = 2131558480;
-			
-			// aapt resource value: 0x7F0D0051
-			public const int abc_action_menu_overflow_description = 2131558481;
-			
-			// aapt resource value: 0x7F0D0052
-			public const int abc_action_mode_done = 2131558482;
-			
-			// aapt resource value: 0x7F0D0054
-			public const int abc_activitychooserview_choose_application = 2131558484;
-			
-			// aapt resource value: 0x7F0D0053
-			public const int abc_activity_chooser_view_see_all = 2131558483;
-			
-			// aapt resource value: 0x7F0D0055
-			public const int abc_capital_off = 2131558485;
-			
-			// aapt resource value: 0x7F0D0056
-			public const int abc_capital_on = 2131558486;
-			
-			// aapt resource value: 0x7F0D0057
-			public const int abc_menu_alt_shortcut_label = 2131558487;
-			
-			// aapt resource value: 0x7F0D0058
-			public const int abc_menu_ctrl_shortcut_label = 2131558488;
-			
-			// aapt resource value: 0x7F0D0059
-			public const int abc_menu_delete_shortcut_label = 2131558489;
-			
-			// aapt resource value: 0x7F0D005A
-			public const int abc_menu_enter_shortcut_label = 2131558490;
-			
-			// aapt resource value: 0x7F0D005B
-			public const int abc_menu_function_shortcut_label = 2131558491;
-			
-			// aapt resource value: 0x7F0D005C
-			public const int abc_menu_meta_shortcut_label = 2131558492;
-			
-			// aapt resource value: 0x7F0D005D
-			public const int abc_menu_shift_shortcut_label = 2131558493;
-			
-			// aapt resource value: 0x7F0D005E
-			public const int abc_menu_space_shortcut_label = 2131558494;
-			
-			// aapt resource value: 0x7F0D005F
-			public const int abc_menu_sym_shortcut_label = 2131558495;
-			
-			// aapt resource value: 0x7F0D0060
-			public const int abc_prepend_shortcut_label = 2131558496;
-			
-			// aapt resource value: 0x7F0D0062
-			public const int abc_searchview_description_clear = 2131558498;
-			
-			// aapt resource value: 0x7F0D0063
-			public const int abc_searchview_description_query = 2131558499;
-			
-			// aapt resource value: 0x7F0D0064
-			public const int abc_searchview_description_search = 2131558500;
-			
 			// aapt resource value: 0x7F0D0065
-			public const int abc_searchview_description_submit = 2131558501;
+			public const int abc_action_bar_home_description = 2131558501;
 			
 			// aapt resource value: 0x7F0D0066
-			public const int abc_searchview_description_voice = 2131558502;
-			
-			// aapt resource value: 0x7F0D0061
-			public const int abc_search_hint = 2131558497;
+			public const int abc_action_bar_up_description = 2131558502;
 			
 			// aapt resource value: 0x7F0D0067
-			public const int abc_shareactionprovider_share_with = 2131558503;
+			public const int abc_action_menu_overflow_description = 2131558503;
 			
 			// aapt resource value: 0x7F0D0068
-			public const int abc_shareactionprovider_share_with_application = 2131558504;
-			
-			// aapt resource value: 0x7F0D0069
-			public const int abc_toolbar_collapse_description = 2131558505;
-			
-			// aapt resource value: 0x7F0D006B
-			public const int appbar_scrolling_view_behavior = 2131558507;
+			public const int abc_action_mode_done = 2131558504;
 			
 			// aapt resource value: 0x7F0D006A
-			public const int app_name = 2131558506;
+			public const int abc_activitychooserview_choose_application = 2131558506;
+			
+			// aapt resource value: 0x7F0D0069
+			public const int abc_activity_chooser_view_see_all = 2131558505;
+			
+			// aapt resource value: 0x7F0D006B
+			public const int abc_capital_off = 2131558507;
 			
 			// aapt resource value: 0x7F0D006C
-			public const int bottom_sheet_behavior = 2131558508;
+			public const int abc_capital_on = 2131558508;
 			
 			// aapt resource value: 0x7F0D006D
-			public const int character_counter_content_description = 2131558509;
+			public const int abc_menu_alt_shortcut_label = 2131558509;
 			
 			// aapt resource value: 0x7F0D006E
-			public const int character_counter_pattern = 2131558510;
+			public const int abc_menu_ctrl_shortcut_label = 2131558510;
 			
 			// aapt resource value: 0x7F0D006F
-			public const int fab_transformation_scrim_behavior = 2131558511;
+			public const int abc_menu_delete_shortcut_label = 2131558511;
 			
 			// aapt resource value: 0x7F0D0070
-			public const int fab_transformation_sheet_behavior = 2131558512;
+			public const int abc_menu_enter_shortcut_label = 2131558512;
+			
+			// aapt resource value: 0x7F0D0071
+			public const int abc_menu_function_shortcut_label = 2131558513;
+			
+			// aapt resource value: 0x7F0D0072
+			public const int abc_menu_meta_shortcut_label = 2131558514;
+			
+			// aapt resource value: 0x7F0D0073
+			public const int abc_menu_shift_shortcut_label = 2131558515;
+			
+			// aapt resource value: 0x7F0D0074
+			public const int abc_menu_space_shortcut_label = 2131558516;
+			
+			// aapt resource value: 0x7F0D0075
+			public const int abc_menu_sym_shortcut_label = 2131558517;
+			
+			// aapt resource value: 0x7F0D0076
+			public const int abc_prepend_shortcut_label = 2131558518;
+			
+			// aapt resource value: 0x7F0D0078
+			public const int abc_searchview_description_clear = 2131558520;
+			
+			// aapt resource value: 0x7F0D0079
+			public const int abc_searchview_description_query = 2131558521;
+			
+			// aapt resource value: 0x7F0D007A
+			public const int abc_searchview_description_search = 2131558522;
+			
+			// aapt resource value: 0x7F0D007B
+			public const int abc_searchview_description_submit = 2131558523;
+			
+			// aapt resource value: 0x7F0D007C
+			public const int abc_searchview_description_voice = 2131558524;
+			
+			// aapt resource value: 0x7F0D0077
+			public const int abc_search_hint = 2131558519;
+			
+			// aapt resource value: 0x7F0D007D
+			public const int abc_shareactionprovider_share_with = 2131558525;
+			
+			// aapt resource value: 0x7F0D007E
+			public const int abc_shareactionprovider_share_with_application = 2131558526;
+			
+			// aapt resource value: 0x7F0D007F
+			public const int abc_toolbar_collapse_description = 2131558527;
+			
+			// aapt resource value: 0x7F0D0081
+			public const int appbar_scrolling_view_behavior = 2131558529;
+			
+			// aapt resource value: 0x7F0D0080
+			public const int app_name = 2131558528;
+			
+			// aapt resource value: 0x7F0D0082
+			public const int bottom_sheet_behavior = 2131558530;
+			
+			// aapt resource value: 0x7F0D0083
+			public const int character_counter_content_description = 2131558531;
+			
+			// aapt resource value: 0x7F0D0084
+			public const int character_counter_pattern = 2131558532;
+			
+			// aapt resource value: 0x7F0D0085
+			public const int fab_transformation_scrim_behavior = 2131558533;
+			
+			// aapt resource value: 0x7F0D0086
+			public const int fab_transformation_sheet_behavior = 2131558534;
 			
 			// aapt resource value: 0x7F0D0000
 			public const int FaceTec_accessibility_cancel_button = 2131558400;
@@ -20992,346 +20992,412 @@ namespace WhiteLabel.Droid
 			public const int FaceTec_action_scan_nfc = 2131558408;
 			
 			// aapt resource value: 0x7F0D0009
-			public const int FaceTec_action_skip_nfc = 2131558409;
+			public const int FaceTec_action_select_id_card = 2131558409;
 			
 			// aapt resource value: 0x7F0D000A
-			public const int FaceTec_action_take_photo = 2131558410;
+			public const int FaceTec_action_select_passport = 2131558410;
 			
 			// aapt resource value: 0x7F0D000B
-			public const int FaceTec_action_try_again = 2131558411;
+			public const int FaceTec_action_skip_nfc = 2131558411;
 			
 			// aapt resource value: 0x7F0D000C
-			public const int FaceTec_camera_permission_enable_camera = 2131558412;
+			public const int FaceTec_action_take_photo = 2131558412;
 			
 			// aapt resource value: 0x7F0D000D
-			public const int FaceTec_camera_permission_header = 2131558413;
+			public const int FaceTec_action_try_again = 2131558413;
 			
 			// aapt resource value: 0x7F0D000E
-			public const int FaceTec_camera_permission_launch_settings = 2131558414;
+			public const int FaceTec_camera_permission_enable_camera = 2131558414;
 			
 			// aapt resource value: 0x7F0D000F
-			public const int FaceTec_camera_permission_message_auth = 2131558415;
+			public const int FaceTec_camera_permission_header = 2131558415;
 			
 			// aapt resource value: 0x7F0D0010
-			public const int FaceTec_camera_permission_message_enroll = 2131558416;
+			public const int FaceTec_camera_permission_launch_settings = 2131558416;
 			
 			// aapt resource value: 0x7F0D0011
-			public const int FaceTec_feedback_center_face = 2131558417;
+			public const int FaceTec_camera_permission_message_auth = 2131558417;
 			
 			// aapt resource value: 0x7F0D0012
-			public const int FaceTec_feedback_face_not_found = 2131558418;
+			public const int FaceTec_camera_permission_message_enroll = 2131558418;
 			
 			// aapt resource value: 0x7F0D0013
-			public const int FaceTec_feedback_face_not_looking_straight_ahead = 2131558419;
+			public const int FaceTec_enter_fullscreen_action = 2131558419;
 			
 			// aapt resource value: 0x7F0D0014
-			public const int FaceTec_feedback_face_not_upright = 2131558420;
+			public const int FaceTec_enter_fullscreen_header = 2131558420;
 			
 			// aapt resource value: 0x7F0D0015
-			public const int FaceTec_feedback_hold_steady = 2131558421;
+			public const int FaceTec_enter_fullscreen_message = 2131558421;
 			
 			// aapt resource value: 0x7F0D0016
-			public const int FaceTec_feedback_move_phone_away = 2131558422;
+			public const int FaceTec_feedback_center_face = 2131558422;
 			
 			// aapt resource value: 0x7F0D0017
-			public const int FaceTec_feedback_move_phone_closer = 2131558423;
+			public const int FaceTec_feedback_face_not_found = 2131558423;
 			
 			// aapt resource value: 0x7F0D0018
-			public const int FaceTec_feedback_move_phone_to_eye_level = 2131558424;
+			public const int FaceTec_feedback_face_not_looking_straight_ahead = 2131558424;
 			
 			// aapt resource value: 0x7F0D0019
-			public const int FaceTec_feedback_use_even_lighting = 2131558425;
+			public const int FaceTec_feedback_face_not_upright = 2131558425;
 			
 			// aapt resource value: 0x7F0D001A
-			public const int FaceTec_idscan_capture_hold_steady_message = 2131558426;
+			public const int FaceTec_feedback_face_not_upright_mobile = 2131558426;
 			
 			// aapt resource value: 0x7F0D001B
-			public const int FaceTec_idscan_capture_id_back_instruction_message = 2131558427;
+			public const int FaceTec_feedback_hold_steady = 2131558427;
 			
 			// aapt resource value: 0x7F0D001C
-			public const int FaceTec_idscan_capture_id_front_instruction_message = 2131558428;
+			public const int FaceTec_feedback_move_away_web = 2131558428;
 			
 			// aapt resource value: 0x7F0D001D
-			public const int FaceTec_idscan_capture_tap_to_focus_message = 2131558429;
+			public const int FaceTec_feedback_move_phone_away = 2131558429;
 			
 			// aapt resource value: 0x7F0D001E
-			public const int FaceTec_idscan_nfc_status_disabled_message = 2131558430;
+			public const int FaceTec_feedback_move_phone_closer = 2131558430;
 			
 			// aapt resource value: 0x7F0D001F
-			public const int FaceTec_idscan_nfc_status_finished_with_error_message = 2131558431;
+			public const int FaceTec_feedback_move_phone_to_eye_level = 2131558431;
 			
 			// aapt resource value: 0x7F0D0020
-			public const int FaceTec_idscan_nfc_status_finished_with_success_message = 2131558432;
+			public const int FaceTec_feedback_move_to_eye_level_web = 2131558432;
 			
 			// aapt resource value: 0x7F0D0021
-			public const int FaceTec_idscan_nfc_status_ready_message = 2131558433;
+			public const int FaceTec_feedback_move_web_closer = 2131558433;
 			
 			// aapt resource value: 0x7F0D0022
-			public const int FaceTec_idscan_nfc_status_scanning_message = 2131558434;
+			public const int FaceTec_feedback_move_web_even_closer = 2131558434;
 			
 			// aapt resource value: 0x7F0D0023
-			public const int FaceTec_idscan_nfc_status_skipped_message = 2131558435;
+			public const int FaceTec_feedback_use_even_lighting = 2131558435;
 			
 			// aapt resource value: 0x7F0D0024
-			public const int FaceTec_idscan_nfc_status_starting_message = 2131558436;
+			public const int FaceTec_idscan_capture_hold_steady_message = 2131558436;
 			
 			// aapt resource value: 0x7F0D0025
-			public const int FaceTec_idscan_nfc_status_weak_connection_message = 2131558437;
+			public const int FaceTec_idscan_capture_id_back_instruction_message = 2131558437;
 			
 			// aapt resource value: 0x7F0D0026
-			public const int FaceTec_idscan_ocr_confirmation_main_header = 2131558438;
+			public const int FaceTec_idscan_capture_id_card_back_instruction_message = 2131558438;
 			
 			// aapt resource value: 0x7F0D0027
-			public const int FaceTec_idscan_review_id_back_instruction_message = 2131558439;
+			public const int FaceTec_idscan_capture_id_card_front_instruction_message = 2131558439;
 			
 			// aapt resource value: 0x7F0D0028
-			public const int FaceTec_idscan_review_id_front_instruction_message = 2131558440;
+			public const int FaceTec_idscan_capture_id_front_instruction_message = 2131558440;
 			
 			// aapt resource value: 0x7F0D0029
-			public const int FaceTec_idscan_type_selection_header = 2131558441;
+			public const int FaceTec_idscan_capture_passport_instruction_message = 2131558441;
 			
 			// aapt resource value: 0x7F0D002A
-			public const int FaceTec_instructions_header_ready_1 = 2131558442;
+			public const int FaceTec_idscan_capture_tap_to_focus_message = 2131558442;
 			
 			// aapt resource value: 0x7F0D002B
-			public const int FaceTec_instructions_header_ready_2 = 2131558443;
+			public const int FaceTec_idscan_nfc_status_disabled_message = 2131558443;
 			
 			// aapt resource value: 0x7F0D002C
-			public const int FaceTec_instructions_message_ready_1 = 2131558444;
+			public const int FaceTec_idscan_nfc_status_finished_with_error_message = 2131558444;
 			
 			// aapt resource value: 0x7F0D002D
-			public const int FaceTec_instructions_message_ready_2 = 2131558445;
+			public const int FaceTec_idscan_nfc_status_finished_with_success_message = 2131558445;
 			
 			// aapt resource value: 0x7F0D002E
-			public const int FaceTec_internal_dev_mode_tag = 2131558446;
+			public const int FaceTec_idscan_nfc_status_ready_message = 2131558446;
 			
 			// aapt resource value: 0x7F0D002F
-			public const int FaceTec_presession_brighten_your_environment = 2131558447;
+			public const int FaceTec_idscan_nfc_status_scanning_message = 2131558447;
 			
 			// aapt resource value: 0x7F0D0030
-			public const int FaceTec_presession_conditions_too_bright = 2131558448;
+			public const int FaceTec_idscan_nfc_status_skipped_message = 2131558448;
 			
 			// aapt resource value: 0x7F0D0031
-			public const int FaceTec_presession_eyes_straight_ahead = 2131558449;
+			public const int FaceTec_idscan_nfc_status_starting_message = 2131558449;
 			
 			// aapt resource value: 0x7F0D0032
-			public const int FaceTec_presession_frame_your_face = 2131558450;
+			public const int FaceTec_idscan_nfc_status_weak_connection_message = 2131558450;
 			
 			// aapt resource value: 0x7F0D0033
-			public const int FaceTec_presession_hold_steady_1 = 2131558451;
+			public const int FaceTec_idscan_ocr_confirmation_main_header = 2131558451;
 			
 			// aapt resource value: 0x7F0D0034
-			public const int FaceTec_presession_hold_steady_2 = 2131558452;
+			public const int FaceTec_idscan_review_id_back_instruction_message = 2131558452;
 			
 			// aapt resource value: 0x7F0D0035
-			public const int FaceTec_presession_hold_steady_3 = 2131558453;
+			public const int FaceTec_idscan_review_id_card_back_instruction_message = 2131558453;
 			
 			// aapt resource value: 0x7F0D0036
-			public const int FaceTec_presession_neutral_expression = 2131558454;
+			public const int FaceTec_idscan_review_id_card_front_instruction_message = 2131558454;
 			
 			// aapt resource value: 0x7F0D0037
-			public const int FaceTec_presession_position_face_straight_in_oval = 2131558455;
+			public const int FaceTec_idscan_review_id_front_instruction_message = 2131558455;
 			
 			// aapt resource value: 0x7F0D0038
-			public const int FaceTec_presession_remove_dark_glasses = 2131558456;
+			public const int FaceTec_idscan_review_passport_instruction_message = 2131558456;
 			
 			// aapt resource value: 0x7F0D0039
-			public const int FaceTec_result_facescan_upload_message = 2131558457;
+			public const int FaceTec_idscan_type_selection_header = 2131558457;
 			
 			// aapt resource value: 0x7F0D003A
-			public const int FaceTec_result_idscan_retry_face_did_not_match_message = 2131558458;
+			public const int FaceTec_initializing_camera = 2131558458;
 			
 			// aapt resource value: 0x7F0D003B
-			public const int FaceTec_result_idscan_retry_id_not_fully_visible_message = 2131558459;
+			public const int FaceTec_initializing_camera_still_loading = 2131558459;
 			
 			// aapt resource value: 0x7F0D003C
-			public const int FaceTec_result_idscan_retry_id_type_not_supported_message = 2131558460;
+			public const int FaceTec_instructions_header_ready_1 = 2131558460;
 			
 			// aapt resource value: 0x7F0D003D
-			public const int FaceTec_result_idscan_retry_ocr_results_not_good_enough_message = 2131558461;
+			public const int FaceTec_instructions_header_ready_2 = 2131558461;
 			
 			// aapt resource value: 0x7F0D003E
-			public const int FaceTec_result_idscan_skip_or_error_nfc_message = 2131558462;
+			public const int FaceTec_instructions_message_ready_1 = 2131558462;
 			
 			// aapt resource value: 0x7F0D003F
-			public const int FaceTec_result_idscan_success_back_side_message = 2131558463;
+			public const int FaceTec_instructions_message_ready_2 = 2131558463;
 			
 			// aapt resource value: 0x7F0D0040
-			public const int FaceTec_result_idscan_success_front_side_back_next_message = 2131558464;
+			public const int FaceTec_internal_dev_mode_tag = 2131558464;
 			
 			// aapt resource value: 0x7F0D0041
-			public const int FaceTec_result_idscan_success_front_side_message = 2131558465;
+			public const int FaceTec_presession_brighten_your_environment = 2131558465;
 			
 			// aapt resource value: 0x7F0D0042
-			public const int FaceTec_result_idscan_success_nfc_message = 2131558466;
+			public const int FaceTec_presession_conditions_too_bright = 2131558466;
 			
 			// aapt resource value: 0x7F0D0043
-			public const int FaceTec_result_idscan_success_user_confirmation_message = 2131558467;
+			public const int FaceTec_presession_eyes_straight_ahead = 2131558467;
 			
 			// aapt resource value: 0x7F0D0044
-			public const int FaceTec_result_idscan_unsuccess_message = 2131558468;
+			public const int FaceTec_presession_frame_your_face = 2131558468;
 			
 			// aapt resource value: 0x7F0D0045
-			public const int FaceTec_result_idscan_upload_message = 2131558469;
+			public const int FaceTec_presession_hold_steady1 = 2131558469;
 			
 			// aapt resource value: 0x7F0D0046
-			public const int FaceTec_result_nfc_upload_message = 2131558470;
+			public const int FaceTec_presession_hold_steady2 = 2131558470;
 			
 			// aapt resource value: 0x7F0D0047
-			public const int FaceTec_result_success_message = 2131558471;
+			public const int FaceTec_presession_hold_steady3 = 2131558471;
 			
 			// aapt resource value: 0x7F0D0048
-			public const int FaceTec_retry_header = 2131558472;
+			public const int FaceTec_presession_hold_steady_1 = 2131558472;
 			
 			// aapt resource value: 0x7F0D0049
-			public const int FaceTec_retry_ideal_image_label = 2131558473;
+			public const int FaceTec_presession_hold_steady_2 = 2131558473;
 			
 			// aapt resource value: 0x7F0D004A
-			public const int FaceTec_retry_instruction_message_1 = 2131558474;
+			public const int FaceTec_presession_hold_steady_3 = 2131558474;
 			
 			// aapt resource value: 0x7F0D004B
-			public const int FaceTec_retry_instruction_message_2 = 2131558475;
+			public const int FaceTec_presession_look_straight_ahead = 2131558475;
 			
 			// aapt resource value: 0x7F0D004C
-			public const int FaceTec_retry_instruction_message_3 = 2131558476;
+			public const int FaceTec_presession_neutral_expression = 2131558476;
 			
 			// aapt resource value: 0x7F0D004D
-			public const int FaceTec_retry_subheader_message = 2131558477;
+			public const int FaceTec_presession_position_face_straight_in_oval = 2131558477;
 			
 			// aapt resource value: 0x7F0D004E
-			public const int FaceTec_retry_your_image_label = 2131558478;
+			public const int FaceTec_presession_remove_dark_glasses = 2131558478;
 			
-			// aapt resource value: 0x7F0D0071
-			public const int facetec_sdk_icon_attention_fill = 2131558513;
+			// aapt resource value: 0x7F0D004F
+			public const int FaceTec_result_facescan_upload_message = 2131558479;
 			
-			// aapt resource value: 0x7F0D0072
-			public const int facetec_sdk_icon_camera_fill = 2131558514;
+			// aapt resource value: 0x7F0D0050
+			public const int FaceTec_result_idscan_retry_face_did_not_match_message = 2131558480;
 			
-			// aapt resource value: 0x7F0D0073
-			public const int facetec_sdk_icon_caution = 2131558515;
+			// aapt resource value: 0x7F0D0051
+			public const int FaceTec_result_idscan_retry_id_not_fully_visible_message = 2131558481;
 			
-			// aapt resource value: 0x7F0D0074
-			public const int facetec_sdk_icon_check = 2131558516;
+			// aapt resource value: 0x7F0D0052
+			public const int FaceTec_result_idscan_retry_id_type_not_supported_message = 2131558482;
 			
-			// aapt resource value: 0x7F0D0075
-			public const int facetec_sdk_icon_close = 2131558517;
+			// aapt resource value: 0x7F0D0053
+			public const int FaceTec_result_idscan_retry_ocr_results_not_good_enough_message = 2131558483;
 			
-			// aapt resource value: 0x7F0D0076
-			public const int facetec_sdk_icon_close_circle = 2131558518;
+			// aapt resource value: 0x7F0D0054
+			public const int FaceTec_result_idscan_skip_or_error_nfc_message = 2131558484;
 			
-			// aapt resource value: 0x7F0D0077
-			public const int facetec_sdk_icon_close_circle_fill = 2131558519;
+			// aapt resource value: 0x7F0D0055
+			public const int FaceTec_result_idscan_success_back_side_message = 2131558485;
 			
-			// aapt resource value: 0x7F0D0078
-			public const int facetec_sdk_icon_fingerprint = 2131558520;
+			// aapt resource value: 0x7F0D0056
+			public const int FaceTec_result_idscan_success_front_side_back_next_message = 2131558486;
 			
-			// aapt resource value: 0x7F0D0079
-			public const int facetec_sdk_icon_icon_unlock = 2131558521;
+			// aapt resource value: 0x7F0D0057
+			public const int FaceTec_result_idscan_success_front_side_message = 2131558487;
 			
-			// aapt resource value: 0x7F0D007A
-			public const int facetec_sdk_icon_info = 2131558522;
+			// aapt resource value: 0x7F0D0058
+			public const int FaceTec_result_idscan_success_nfc_message = 2131558488;
 			
-			// aapt resource value: 0x7F0D007B
-			public const int facetec_sdk_icon_keypad = 2131558523;
+			// aapt resource value: 0x7F0D0059
+			public const int FaceTec_result_idscan_success_user_confirmation_message = 2131558489;
 			
-			// aapt resource value: 0x7F0D007C
-			public const int facetec_sdk_icon_left = 2131558524;
+			// aapt resource value: 0x7F0D005A
+			public const int FaceTec_result_idscan_unsuccess_message = 2131558490;
 			
-			// aapt resource value: 0x7F0D007D
-			public const int facetec_sdk_icon_light = 2131558525;
+			// aapt resource value: 0x7F0D005B
+			public const int FaceTec_result_idscan_upload_message = 2131558491;
 			
-			// aapt resource value: 0x7F0D007E
-			public const int facetec_sdk_icon_light_fill = 2131558526;
+			// aapt resource value: 0x7F0D005C
+			public const int FaceTec_result_nfc_upload_message = 2131558492;
 			
-			// aapt resource value: 0x7F0D007F
-			public const int facetec_sdk_icon_lock = 2131558527;
+			// aapt resource value: 0x7F0D005D
+			public const int FaceTec_result_success_message = 2131558493;
 			
-			// aapt resource value: 0x7F0D0080
-			public const int facetec_sdk_icon_mid_enroll_glasses = 2131558528;
+			// aapt resource value: 0x7F0D005E
+			public const int FaceTec_retry_header = 2131558494;
 			
-			// aapt resource value: 0x7F0D0081
-			public const int facetec_sdk_icon_moon = 2131558529;
+			// aapt resource value: 0x7F0D005F
+			public const int FaceTec_retry_ideal_image_label = 2131558495;
 			
-			// aapt resource value: 0x7F0D0082
-			public const int facetec_sdk_icon_moon_fill = 2131558530;
+			// aapt resource value: 0x7F0D0060
+			public const int FaceTec_retry_instruction_message_1 = 2131558496;
 			
-			// aapt resource value: 0x7F0D0083
-			public const int facetec_sdk_icon_one_circle = 2131558531;
+			// aapt resource value: 0x7F0D0061
+			public const int FaceTec_retry_instruction_message_2 = 2131558497;
 			
-			// aapt resource value: 0x7F0D0084
-			public const int facetec_sdk_icon_phone_check_fill = 2131558532;
+			// aapt resource value: 0x7F0D0062
+			public const int FaceTec_retry_instruction_message_3 = 2131558498;
 			
-			// aapt resource value: 0x7F0D0085
-			public const int facetec_sdk_icon_phone_zoom = 2131558533;
+			// aapt resource value: 0x7F0D0063
+			public const int FaceTec_retry_subheader_message = 2131558499;
 			
-			// aapt resource value: 0x7F0D0086
-			public const int facetec_sdk_icon_redo = 2131558534;
+			// aapt resource value: 0x7F0D0064
+			public const int FaceTec_retry_your_image_label = 2131558500;
 			
 			// aapt resource value: 0x7F0D0087
-			public const int facetec_sdk_icon_selfie = 2131558535;
+			public const int facetec_sdk_icon_attention_fill = 2131558535;
 			
 			// aapt resource value: 0x7F0D0088
-			public const int facetec_sdk_icon_settings = 2131558536;
+			public const int facetec_sdk_icon_camera_fill = 2131558536;
 			
 			// aapt resource value: 0x7F0D0089
-			public const int facetec_sdk_icon_three_circle = 2131558537;
+			public const int facetec_sdk_icon_caution = 2131558537;
 			
 			// aapt resource value: 0x7F0D008A
-			public const int facetec_sdk_icon_thumbs_up_fill = 2131558538;
+			public const int facetec_sdk_icon_check = 2131558538;
 			
 			// aapt resource value: 0x7F0D008B
-			public const int facetec_sdk_icon_two_circle = 2131558539;
+			public const int facetec_sdk_icon_close = 2131558539;
 			
 			// aapt resource value: 0x7F0D008C
-			public const int facetec_sdk_icon_undetermined = 2131558540;
+			public const int facetec_sdk_icon_close_circle = 2131558540;
 			
 			// aapt resource value: 0x7F0D008D
-			public const int facetec_sdk_icon_user_alert = 2131558541;
+			public const int facetec_sdk_icon_close_circle_fill = 2131558541;
 			
 			// aapt resource value: 0x7F0D008E
-			public const int facetec_sdk_icon_user_fail_fill = 2131558542;
+			public const int facetec_sdk_icon_fingerprint = 2131558542;
 			
 			// aapt resource value: 0x7F0D008F
-			public const int facetec_sdk_icon_user_retry = 2131558543;
+			public const int facetec_sdk_icon_icon_unlock = 2131558543;
 			
 			// aapt resource value: 0x7F0D0090
-			public const int facetec_sdk_icon_wifi_icon = 2131558544;
+			public const int facetec_sdk_icon_info = 2131558544;
 			
 			// aapt resource value: 0x7F0D0091
-			public const int facetec_sdk_icon_zoom_logo_dev = 2131558545;
+			public const int facetec_sdk_icon_keypad = 2131558545;
 			
 			// aapt resource value: 0x7F0D0092
-			public const int facetec_sdk_icon_zoom_logo_prod = 2131558546;
+			public const int facetec_sdk_icon_left = 2131558546;
 			
 			// aapt resource value: 0x7F0D0093
-			public const int hide_bottom_view_on_scroll_behavior = 2131558547;
+			public const int facetec_sdk_icon_light = 2131558547;
 			
 			// aapt resource value: 0x7F0D0094
-			public const int library_name = 2131558548;
+			public const int facetec_sdk_icon_light_fill = 2131558548;
 			
 			// aapt resource value: 0x7F0D0095
-			public const int mtrl_chip_close_icon_content_description = 2131558549;
+			public const int facetec_sdk_icon_lock = 2131558549;
 			
 			// aapt resource value: 0x7F0D0096
-			public const int password_toggle_content_description = 2131558550;
+			public const int facetec_sdk_icon_mid_enroll_glasses = 2131558550;
 			
 			// aapt resource value: 0x7F0D0097
-			public const int path_password_eye = 2131558551;
+			public const int facetec_sdk_icon_moon = 2131558551;
 			
 			// aapt resource value: 0x7F0D0098
-			public const int path_password_eye_mask_strike_through = 2131558552;
+			public const int facetec_sdk_icon_moon_fill = 2131558552;
 			
 			// aapt resource value: 0x7F0D0099
-			public const int path_password_eye_mask_visible = 2131558553;
+			public const int facetec_sdk_icon_one_circle = 2131558553;
 			
 			// aapt resource value: 0x7F0D009A
-			public const int path_password_strike_through = 2131558554;
+			public const int facetec_sdk_icon_phone_check_fill = 2131558554;
 			
 			// aapt resource value: 0x7F0D009B
-			public const int search_menu_title = 2131558555;
+			public const int facetec_sdk_icon_phone_zoom = 2131558555;
 			
 			// aapt resource value: 0x7F0D009C
-			public const int status_bar_notification_info_overflow = 2131558556;
+			public const int facetec_sdk_icon_redo = 2131558556;
+			
+			// aapt resource value: 0x7F0D009D
+			public const int facetec_sdk_icon_selfie = 2131558557;
+			
+			// aapt resource value: 0x7F0D009E
+			public const int facetec_sdk_icon_settings = 2131558558;
+			
+			// aapt resource value: 0x7F0D009F
+			public const int facetec_sdk_icon_three_circle = 2131558559;
+			
+			// aapt resource value: 0x7F0D00A0
+			public const int facetec_sdk_icon_thumbs_up_fill = 2131558560;
+			
+			// aapt resource value: 0x7F0D00A1
+			public const int facetec_sdk_icon_two_circle = 2131558561;
+			
+			// aapt resource value: 0x7F0D00A2
+			public const int facetec_sdk_icon_undetermined = 2131558562;
+			
+			// aapt resource value: 0x7F0D00A3
+			public const int facetec_sdk_icon_user_alert = 2131558563;
+			
+			// aapt resource value: 0x7F0D00A4
+			public const int facetec_sdk_icon_user_fail_fill = 2131558564;
+			
+			// aapt resource value: 0x7F0D00A5
+			public const int facetec_sdk_icon_user_retry = 2131558565;
+			
+			// aapt resource value: 0x7F0D00A6
+			public const int facetec_sdk_icon_wifi_icon = 2131558566;
+			
+			// aapt resource value: 0x7F0D00A7
+			public const int facetec_sdk_icon_zoom_logo_dev = 2131558567;
+			
+			// aapt resource value: 0x7F0D00A8
+			public const int facetec_sdk_icon_zoom_logo_prod = 2131558568;
+			
+			// aapt resource value: 0x7F0D00A9
+			public const int hide_bottom_view_on_scroll_behavior = 2131558569;
+			
+			// aapt resource value: 0x7F0D00AA
+			public const int library_name = 2131558570;
+			
+			// aapt resource value: 0x7F0D00AB
+			public const int mtrl_chip_close_icon_content_description = 2131558571;
+			
+			// aapt resource value: 0x7F0D00AC
+			public const int password_toggle_content_description = 2131558572;
+			
+			// aapt resource value: 0x7F0D00AD
+			public const int path_password_eye = 2131558573;
+			
+			// aapt resource value: 0x7F0D00AE
+			public const int path_password_eye_mask_strike_through = 2131558574;
+			
+			// aapt resource value: 0x7F0D00AF
+			public const int path_password_eye_mask_visible = 2131558575;
+			
+			// aapt resource value: 0x7F0D00B0
+			public const int path_password_strike_through = 2131558576;
+			
+			// aapt resource value: 0x7F0D00B1
+			public const int search_menu_title = 2131558577;
+			
+			// aapt resource value: 0x7F0D00B2
+			public const int status_bar_notification_info_overflow = 2131558578;
 			
 			static String()
 			{

@@ -4,7 +4,7 @@
              x:Class="WhiteLabel.Views.Identity.OtpVerificationPage"
              xmlns:grial="clr-namespace:WhiteLabel.Core;assembly=WhiteLabel.Core" 
              xmlns:local="clr-namespace:WhiteLabel"
-             xmlns:behaviors="clr-namespace:WhiteLabel.Controls"
+             xmlns:controls="clr-namespace:WhiteLabel.Controls"
              NavigationPage.HasNavigationBar="False"
              Title="Paso 2">
     <ContentPage.Content>
@@ -55,53 +55,23 @@
 							BackgroundColor="{ DynamicResource BaseTextColor }" />
                     </StackLayout>
 
-                    <!---CONTENEDOR DE CAMPOS-->
-                    <Grid
-						Grid.Row="1"
-						RowSpacing="30"
-						ColumnSpacing="15"
-						Padding="0,20,0,20"
-						VerticalOptions="Center"
-						Style="{ StaticResource ResponsiveLandscapeMarginStyle }">
+                    <!-- CAMPOS DE CODIGO -->
+                    <Grid Grid.Row="1" 
+                          RowSpacing="50" 
+                          ColumnSpacing="30" 
+                          VerticalOptions="Center" 
+                          HorizontalOptions="CenterAndExpand"
+                          Style="{ StaticResource ResponsiveLandscapeMarginStyle }">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition
-								Width="Auto" />
-                            <ColumnDefinition
-								Width="*" />
+                            <ColumnDefinition Width="55"/>
+                            <ColumnDefinition Width="55"/>
+                            <ColumnDefinition Width="55"/>
+                            <ColumnDefinition Width="55"/>
                         </Grid.ColumnDefinitions>
-
-                        <Grid.RowDefinitions>
-                            <RowDefinition
-								Height="*" />
-                            <RowDefinition
-								Height="*" />
-                        </Grid.RowDefinitions>
-
-                        <!-- ICONO -->
-                        <Label
-							Grid.Column="0"
-							Grid.Row="0"
-							FontSize="24"
-							Text="{ x:Static local:GrialIconsFont.Lock }"
-							Style="{ StaticResource FontIcon }"
-							HorizontalTextAlignment="Center"
-							TextColor="{ DynamicResource ComplementColor }"
-							VerticalOptions="Center"
-							HorizontalOptions="Center" />
-
-                        <!--ENTRADA PARA FOLIO-->
-                        <Entry
-                            Keyboard="Numeric"
-							Grid.Column="1"
-							Grid.Row="0"
-							VerticalOptions="Center"
-							HorizontalOptions="FillAndExpand"
-							Placeholder="Folio Personal">
-                            <Entry.Behaviors>
-                                <behaviors:MaskedBehavior Mask="XXX-XXXX"/>
-                            </Entry.Behaviors>
-                        </Entry>
-
+                        <controls:CustomEntry x:Name="step1" Grid.Column="0" TextChanged="step1_TextChanged" Keyboard="Numeric" MaxLength="1" HorizontalTextAlignment="Center" BackgroundColor="#e5e5e5" FontFamily="fontbold" FontSize="Large"/>
+                        <controls:CustomEntry x:Name="step2" Grid.Column="1" TextChanged="step2_TextChanged" Keyboard="Numeric" MaxLength="1" HorizontalTextAlignment="Center" BackgroundColor="#e5e5e5" FontFamily="fontbold" FontSize="Large"/>
+                        <controls:CustomEntry x:Name="step3" Grid.Column="2" TextChanged="step3_TextChanged"  Keyboard="Numeric" MaxLength="1" HorizontalTextAlignment="Center" BackgroundColor="#e5e5e5" FontFamily="fontbold" FontSize="Large"/>
+                        <controls:CustomEntry x:Name="step4" Grid.Column="3" TextChanged="step4_TextChanged" Keyboard="Numeric" MaxLength="1" HorizontalTextAlignment="Center" BackgroundColor="#e5e5e5" FontFamily="fontbold" FontSize="Large"/>
                     </Grid>
 
                     <!-- BOTON -->
@@ -111,7 +81,7 @@
 						Padding="0,10,0,0"
 						HorizontalOptions="FillAndExpand"
 						VerticalOptions="End">
-                        
+
                         <!-- SIGUIENTE -->
                         <Button Command="{Binding StartEnrollCommand}"
 							Style="{ StaticResource PrimaryActionButtonStyle }"

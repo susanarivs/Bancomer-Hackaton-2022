@@ -23,23 +23,23 @@ namespace WhiteLabel.Droid.Services.Processors
 
         public PhotoIDMatchProcessor(Context context, string sessionToken)
         {
-            FaceTecCustomization.SetIDScanUploadMessageOverrides(
-                "Subiendo\nEscaneo frontal de ID\nEncriptado", // Upload of ID front-side has started.
-                "Cargando...\nConexión lenta", // Upload of ID front-side is still uploading to Server after an extended period of time.
-                "Carga completada", // Upload of ID front-side to the Server is complete.
-                "Procesando Escaneo de ID", // Upload of ID front-side is complete and we are waiting for the Server to finish processing and respond.
-                "Subiendo\nReverso de ID", // Upload of ID back-side has started.
-                "Cargando...\nConexión lenta", // Upload of ID back-side is still uploading to Server after an extended period of time.
-                "Carga completada", // Upload of ID back-side to Server is complete.
-                "Procesando Reverso de ID", // Upload of ID back-side is complete and we are waiting for the Server to finish processing and respond.
-                "Cargando\nInformación confirmada", // Upload of User Confirmed Info has started.
-                "Cargando...\nConexión lenta", // Upload of User Confirmed Info is still uploading to Server after an extended period of time.
-                "Carga completada", // Upload of User Confirmed Info to the Server is complete.
-                "Procesando", // Upload of User Confirmed Info is complete and we are waiting for the Server to finish processing and respond.
-                "Subiendo detalles NFC\nEncriptado", // Upload of NFC Details has started.
-                "Cargando...\nConexión lenta", // Upload of NFC Details is still uploading to Server after an extended period of time.
-                "Carga completada", // Upload of NFC Details to the Server is complete.
-                "Procesando\nDetalles NFC");
+            /*FaceTecCustomization.SetIDScanUploadMessageOverrides(
+                "Subiendo\nEscaneo frontal de ID\nEncriptado",
+                "Cargando...\nConexión lenta", 
+                "Carga completada", 
+                "Procesando Escaneo de ID",
+                "Subiendo\nReverso de ID", 
+                "Cargando...\nConexión lenta", 
+                "Carga completada", 
+                "Procesando Reverso de ID", 
+                "Cargando\nInformación confirmada", 
+                "Cargando...\nConexión lenta", 
+                "Carga completada",
+                "Procesando",
+                "Subiendo detalles NFC\nEncriptado",
+                "Cargando...\nConexión lenta",
+                "Carga completada",
+                "Procesando\nDetalles NFC");*/
 
             FaceTecSessionActivity.CreateAndLaunchSession(context, this, this, sessionToken);
         }
@@ -86,7 +86,7 @@ namespace WhiteLabel.Droid.Services.Processors
 
                     if (wasProcessed)
                     {
-                        FaceTecCustomization.OverrideResultScreenSuccessMessage = "Prueba de vida confirmada !";
+                        FaceTecCustomization.OverrideResultScreenSuccessMessage = "!Prueba de vida confirmada!";
 
                         success = p1.ProceedToNextStep(scanResultBlob);
                     }
@@ -164,7 +164,7 @@ namespace WhiteLabel.Droid.Services.Processors
                                 "El Documento de identidad\nNo es completamente visible", // Case where a Retry is needed because a Full ID was not detected with high enough confidence.
                                 "El texto de la identificación no es visible", // Case where a Retry is needed because the OCR did not produce good enough results and the User should Retry with a better capture.
                                 "Tipo de ID no admitida\nUtilice una identificación diferente", // Case where there is likely no OCR Template installed for the document the User is attempting to scan.
-                                "Información de escaneo NFC\nSubida exitosament" // Case where NFC Scan was skipped due to the user's interaction or an unexpected error.
+                                "Información de escaneo NFC\nSubida exitosamente" // Case where NFC Scan was skipped due to the user's interaction or an unexpected error.
                         );
 
                         success = p1.ProceedToNextStep(scanResultBlob);

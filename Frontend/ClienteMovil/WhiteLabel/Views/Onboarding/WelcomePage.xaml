@@ -52,7 +52,7 @@
 						Margin="10,0,0,0"
 						TextColor="{ DynamicResource InverseTextColor }"
 						FontSize="74"
-						Text="{ x:Static local:GrialIconsFont.LogoGrialSquare }"
+						Text="{ x:Static local:GrialIconsFont.LogoGrial }"
 						Style="{StaticResource FontIcon}"
 						HorizontalOptions="Start"
 						VerticalTextAlignment="Center" />
@@ -71,7 +71,7 @@
                         <Label
 							TextColor="{ DynamicResource InverseTextColor }"
 							FontSize="24"
-							Text="Octubre 2022"
+							Text="2022"
 							VerticalTextAlignment="Start" />
 
                     </StackLayout>
@@ -101,7 +101,7 @@
 
                 <Label
 					LineBreakMode="WordWrap"
-					Text="Prueba de concepto de equipo Smallville"
+					Text="Prueba de concepto"
 					TextColor="{ DynamicResource InverseTextColor }"
 					VerticalTextAlignment="Center"
 					FontSize="{ OnIdiom Phone=17, Tablet=27 }"
@@ -115,7 +115,7 @@
 					BackgroundColor="#88000000"
 					FontSize="10"
 					HorizontalOptions="Start"
-					Text="Version 1.0"
+					Text="Version 1.2"
 					Margin="-4,0" />
             </StackLayout>
 

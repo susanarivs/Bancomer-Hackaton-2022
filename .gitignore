@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+Frontend/ClienteMovil/Facetec.Droid/bin/
+
+Frontend/ClienteMovil/Facetec.Droid/obj/
+
+Infraestructura/Web/.terraform/
+
+Infraestructura/Web/.terraform.lock.hcl
