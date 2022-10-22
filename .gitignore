@@ -30,3 +30,11 @@ Frontend/ClienteMovil/Facetec.Droid/obj/
 Infraestructura/Web/.terraform/
 
 Infraestructura/Web/.terraform.lock.hcl
+
+Backend/WebSockets/.vs/
+
+Backend/WebSockets/bin/
+
+Backend/WebSockets/obj/
+
+Backend/WebSockets/packages/
