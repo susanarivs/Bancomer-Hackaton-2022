@@ -83,8 +83,7 @@ namespace WhiteLabel.Droid
         public void ScanningStarted(AndroidZoomPlatform implementation, string theToken)
         {
             CurrentZoomImplementation = implementation;
-
-            //latestProcessor = new LivenessCheckProcessor(this, theToken);
+            
             latestProcessor = new PhotoIDMatchProcessor(this, theToken);
         }
 

@@ -1,13 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WhiteLabel.Views.Identity.EnrollmentPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <!--mostrar la vista de usuario y cargar el contrato en pdf-->
-        </StackLayout>
-    </ContentPage.Content>
+             xmlns:grial="clr-namespace:WhiteLabel.Core;assembly=WhiteLabel.Core" 
+             xmlns:local="clr-namespace:WhiteLabel"
+             x:Class="WhiteLabel.Views.Identity.EnrollmentPage"
+             Title="Bienvenido"
+             BackgroundColor="{ DynamicResource MainWrapperBackgroundColor }">
+    <ScrollView
+		BackgroundColor="{ DynamicResource BasePageColor }">
+        <!--GRID WRAPPER-->
+        <Grid
+			Padding="0"
+			RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition
+					Height="300" />
+                <RowDefinition
+					Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- GRADIENT -->
+            <grial:GrialNavigationBar
+				Grid.Row="0"
+				UseNavigationPageBarBackgroundColor="true"
+				UseNavigationPageBarBackgroundGradient="true" />
+
+            <!--SOCIAL HEADER-->
+            <Grid
+				Grid.Row="0"
+				HeightRequest="300"
+				Padding="0">
+                <StackLayout
+					Orientation="Vertical"
+					Spacing="20">
+
+                    <Grid
+						HorizontalOptions="Center"
+						VerticalOptions="Center"
+						TranslationY="25">
+
+                        <!-- AVATAR -->
+                        <local:CircleCachedImage
+							BorderColor="White"
+							Source="{ Binding Profile.ImageProfile }"
+							WidthRequest="100"
+							HeightRequest="100">
+                        </local:CircleCachedImage>
+
+                        <!-- BADGE -->
+                        <local:Badge
+							Text="7+"
+							TextColor="{ DynamicResource InverseTextColor }"
+							BackgroundColor="#22c064"
+							HorizontalOptions="Center"
+							VerticalOptions="Start"
+							TranslationX="40" />
+                    </Grid>
+
+                    <!-- USER NAME AND DESCRIPTION -->
+                    <StackLayout
+						Padding="20">
+                        <Label
+							Text="{ Binding Profile.Name }"
+							TextColor="{ DynamicResource OverImageTextColor }"
+							HorizontalTextAlignment="Center"
+							HorizontalOptions="Center"
+							Style="{ StaticResource LabelBoldStyle }"
+							FontSize="{ grial:OnOrientationDouble
+                                    PortraitPhone=22,
+                                    LandscapePhone=22,
+                                    PortraitTablet=24,
+                                    LandscapeTablet=24 }" />
+                        <Label
+							TextColor="{ DynamicResource OverImageTextColor }"
+							HorizontalTextAlignment="Center"
+							HorizontalOptions="Center"
+							Text="{ Binding Profile.Description }"
+							FontSize="{ grial:OnOrientationDouble
+                                    PortraitPhone=18,
+                                    LandscapePhone=18,
+                                    PortraitTablet=20,
+                                    LandscapeTablet=20 }" />
+                    </StackLayout>
+
+                </StackLayout>
+            </Grid>
+
+            <Grid
+				Grid.Row="1">
+
+                <StackLayout
+					Padding="0"
+					Spacing="0">
+                    <!--PDF contrato-->
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>

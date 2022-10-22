@@ -1,4 +1,6 @@
-﻿namespace WhiteLabel.Services.Facetec
+﻿using WhiteLabel.Models;
+
+namespace WhiteLabel.Services.Facetec
 {
     public class MessagesZoom
     {
@@ -8,6 +10,7 @@
         public class ScanningDoneMessage
         {
             public bool ScanningCancelled { get; set; }
+            public ProfileData ProfileObtained { get; set; }
         }
 
         public class ScannerStatusMessage

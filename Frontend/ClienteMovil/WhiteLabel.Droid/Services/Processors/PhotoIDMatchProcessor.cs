@@ -92,6 +92,7 @@ namespace WhiteLabel.Droid.Services.Processors
                     }
                     else
                     {
+                        success = false;
                         p1.Cancel();
                     }
                 }
@@ -99,8 +100,7 @@ namespace WhiteLabel.Droid.Services.Processors
             }
             catch (Exception ex)
             {
-                //No se pudo crear el payload
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                success = false;
                 p1.Cancel();
             }
         }
@@ -171,13 +171,14 @@ namespace WhiteLabel.Droid.Services.Processors
                     }
                     else
                     {
+                        success = false;
                         p1.Cancel();
                     }
                 }
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                success = false;
                 p1.Cancel();
             }
         }
