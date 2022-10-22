@@ -1,8 +1,24 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-Infraestructura/Web/.terraform/
+node_modules
+dist
+dist-ssr
+*.local
 
-Infraestructura/Web/.terraform.lock.hcl
-
-Frontend/ClienteMovil/Facetec.Droid/bin/
-
-Frontend/ClienteMovil/Facetec.Droid/obj/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
